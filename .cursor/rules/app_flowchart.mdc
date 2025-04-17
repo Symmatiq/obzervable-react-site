@@ -1,0 +1,63 @@
+---
+description: Apply these rules when making changes to the project
+globs: 
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+flowchart TD
+  A[Landing Page: Obzervable - Real-time Data, Simplified]
+  B[Navigate Menu: Products, Solutions, Integrations, Docs, Resources, Pricing]
+  C[Overview & Messaging: Domain-Driven, Data Mesh, Event-Driven Arch.]
+  D[DEPRECATED_Features Page: Core Platform Capabilities]
+  E[Documentation & Developer Hub]
+  F[Integrations]
+  G[Resources]
+  H[Pricing]
+  I[External Signup: app.obzervable.com/signup]
+  J[Feature: Enhanced Monitoring & Alerts]
+  K[Feature: In-browser Data Flow Builder]
+  L[Feature: AI-Powered Rapid Development]
+  M[Feature: Data and Schema Validation (Implicit/Part of Builder)]
+  N[Feature: Pre-made ETL/Streaming Templates]
+  O[Feature: Fault Tolerance & Scalability]
+  P[Feature: Unlimited Listeners]
+  Q[Doc Section: Get Started / How it Works]
+  R[Doc Section: Sources / Integration Guides]
+  S[Doc Section: Destinations / Use Cases]
+  T[Doc Section: SDKs / APIs]
+  U[Doc Section: Monitoring & Alerts API]
+  V[Doc Section: Data Flow Builder Guide]
+  W[Doc Section: AI Integration Guide]
+  Y[Customer Stories]
+
+  A --> B
+
+  B -- Products --> C
+  B -- Solutions --> I
+  B -- Integrations --> F
+  B -- Docs --> E
+  B -- Resources --> G
+  B -- Pricing --> H
+
+  D --> J
+  D --> K
+  D --> L
+  D --> M
+  D --> N
+  D --> O
+  D --> P
+
+  E --> Q
+  E --> R
+  E --> S
+  E --> T
+  E --> U
+  E --> V
+  E --> W
+
+  G --> Y
+
+  H --> I
+  (B -- Optional --> PricingPage)
+  (B -- Optional --> SolutionsPage)

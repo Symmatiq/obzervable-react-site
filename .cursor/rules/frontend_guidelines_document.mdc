@@ -1,0 +1,106 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Obzervable Site - Frontend Guideline Document
+
+This guide explains how the frontend of the Obzervable Site is structured and developed. It’s written in everyday language so that everyone—from developers to non-techies—can understand how our website is built and maintained.
+
+## 1. Frontend Architecture
+
+Our website is built using the Next.js framework, which is a modern, React-based technology that provides a fast, structured, and scalable way to build websites. Next.js helps us load pages quickly, supports interactive experiences like animations on the landing page, and is ideal for multi-page sites.
+
+Key elements of our frontend architecture:
+
+*   **Modular Design:** We break the user interface into smaller components or sections so it’s easy to work on each part separately.
+*   **Scalability:** The structure allows us to add new features, pages, or animations without needing a complete overhaul of the site.
+*   **Maintainability:** The code is organized and clean, making future updates straightforward and reducing the chance of bugs.
+*   **Performance:** Next.js provides built-in support for techniques like server-side rendering and code splitting so users enjoy quick load times and smooth navigation.
+
+## 2. Design Principles
+
+Our design approach centers on how users interact with the site. We focus on:
+
+*   **Usability:** Our site is designed so that developers, architects, and CTOs can quickly understand and interact with the information. The structure is familiar and intuitive, taking cues from other successful platforms while maintaining a distinct Obzervable style.
+*   **Accessibility:** We adhere to best practices to ensure that the site is usable by everyone, including people with disabilities. This means clear navigation, proper text contrasts, and a consistent structure throughout.
+*   **Responsiveness:** The site is built to work well on different devices like desktops, tablets, and mobile phones. This ensures a great experience no matter how you access the site.
+*   **Engaging Design:** From interactive animations on the landing page to engaging content layouts on features and documentation pages, every design decision supports our goal of showcasing Obzervable’s platform in an attractive way.
+
+## 3. Styling and Theming
+
+Styling in our project is a key component of delivering a consistent user experience. Here’s how we manage it:
+
+*   **CSS Methodology:** We use methodologies like BEM (Block, Element, Modifier) for naming CSS classes. This helps maintain consistency in our styles and makes the code easier to manage. For added flexibility, we also use SASS as our CSS pre-processor to write more efficient, cleaner code.
+
+*   **Frameworks & Tools:** Tailwind CSS is used to rapidly build modern and utility-first designs. This gives us a quick way to adjust and test different styles during development.
+
+*   **Design Style:** The overall look is modern with a touch of flat design and material influences to keep the visual experience clean and intuitive. Interactive animations borrow inspiration from Rudderstack's detailed yet accessible presentation.
+
+*   **Theming:** We maintain a consistent theme across all pages following the Obzervable existing color schemes and fonts.
+
+*   **Color Palette:**
+
+    *   Primary: Deep blue (#002F5F) – Reflecting strength and trust.
+    *   Secondary: Vibrant teal (#00B8A9) – To add a pop of energy.
+    *   Accent: Soft grey (#F4F4F4) – For backgrounds and to balance brighter colors.
+    *   Contrast: White (#FFFFFF) – For text and clarity.
+
+*   **Typography:** The fonts align with the existing Obzervable site. The recommended font family is a modern sans-serif, such as 'Roboto' or 'Open Sans', to ensure readability and a contemporary look.
+
+## 4. Component Structure
+
+Our project uses a component-based architecture that breaks the interface into reusable elements. Here’s what that means:
+
+*   **Reusability:** Design elements like headers, footers, cards, buttons, and forms are built as individual components. These components are then reused across different parts of the website, reducing redundancy and maintaining consistency.
+*   **Organization:** Each component is stored in its designated folder which makes it simple to navigate and update as needed. This structure supports teamwork by ensuring that changes in one component do not inadvertently affect others.
+*   **Benefits:** Reducing repetitive code makes the application easier to maintain and scales well as the project grows with new pages and features.
+
+## 5. State Management
+
+To handle the flow of data and application state, the project uses the Context API built into React. Here’s how it works for us:
+
+*   **Centralized Store:** The Context API allows us to create a centralized place to store information (like user preferences or content dynamically loaded from APIs) that can be shared among components effortlessly.
+*   **Smooth Experience:** By managing the state in one place, we ensure that data changes are reflected immediately across the interface, giving users a smooth and responsive experience when interacting with the site.
+
+## 6. Routing and Navigation
+
+Navigating through the different parts of the website is handled by Next.js’s built-in routing capabilities.
+
+*   **Page-Based Routing:** Each page, such as the Landing Page, Features Page, or Documentation Hub, is managed as a separate file. This makes it easy for visitors to jump from one section to another using clear and concise navigation bars.
+*   **Dynamic Routing:** For sections like documentation and API guides, dynamic routing provides a seamless way to access a variety of related content.
+*   **User Flow:** The navigation is designed to guide users naturally through our core messages, interactive elements, and calls to action like signup links leading to external pages.
+
+## 7. Performance Optimization
+
+Performance is a priority to keep the users engaged from the first click. We employ several techniques to maintain top performance:
+
+*   **Lazy Loading:** Components or sections of the site that aren’t immediately visible are loaded only when the user needs them. This keeps the initial load time very short.
+*   **Code Splitting:** The codebase is divided into chunks that are loaded only on the page that needs them. This reduces the total amount of code in the initial bundle.
+*   **Asset Optimization:** Images, animations, and scripts are optimized to ensure they load quickly without sacrificing quality. Next.js also takes care of some of these optimizations automatically.
+
+## 8. Testing and Quality Assurance
+
+To ensure that the site is reliable and free of bugs, we have a solid testing regimen in place:
+
+*   **Unit Tests:** We test individual components to ensure each part of the interface works correctly on its own.
+*   **Integration Tests:** These tests check that components work together as expected, particularly when data is passed between them.
+*   **End-to-End Tests:** Simulated user interactions verify that the entire flow—from landing on the home page to clicking through to documentation or feature pages—functions smoothly.
+*   **Tools Used:** We use popular tools like Jest for unit and integration tests, and Cypress for end-to-end testing. These tools help us catch issues before they affect end users.
+
+## 9. Conclusion and Overall Frontend Summary
+
+In summary, the Obzervable Site frontend is built using state-of-the-art technologies and design principles that ensure a reliable, interactive, and visually appealing web experience:
+
+*   Built using Next.js to support modular, scalable, and high-performance web pages
+*   Designed following clear principles of usability, accessibility, and responsiveness
+*   Uses modern CSS techniques (BEM, SASS, Tailwind CSS) with a consistent design theme and color palette that reflects Obzervable’s identity
+*   Employs component-based architecture that makes it easy to build and maintain each part of the interface
+*   State is managed using React’s Context API to provide a seamless user experience across pages
+*   Routing is streamlined using Next.js, ensuring users always know where they are and how to navigate
+*   Performance is optimized with lazy loading, code splitting, and asset optimization, guaranteeing a fast and engaging site
+*   Thorough testing at every level ensures that the site remains high quality and ready to scale
+
+This frontend guideline document ensures that everyone—whether a developer or a project stakeholder—understands how the Obzervable Site is built to meet the high standards required for showcasing the platform effectively. The careful integration of design components and modern technologies makes it a standout project in the market.

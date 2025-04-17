@@ -9,11 +9,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#002F5F",  // Deep blue
+          light: "#104A80",
+          dark: "#00213F"
+        },
+        secondary: {
+          DEFAULT: "#00B8A9",  // Vibrant teal
+          light: "#0FDBCA",
+          dark: "#008C82"
+        },
+        accent: {
+          DEFAULT: "#F4F4F4",  // Soft grey
+          dark: "#E0E0E0"
+        }
+      },
+      fontFamily: {
+        sans: ["Roboto", "Open Sans", "ui-sans-serif", "system-ui", "-apple-system", "sans-serif"]
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },
   plugins: [],
 };
-export default config;
+export default config; 

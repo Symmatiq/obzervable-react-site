@@ -1,0 +1,82 @@
+---
+description: Apply these rules when making changes to the project
+globs: 
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Obzervable Site Tech Stack Document
+
+This document explains the technology choices for the Obzervable Site in a straightforward way. Our aim is to describe these choices in a manner that anyone, technical or not, can understand the reasoning behind each component.
+
+## Frontend Technologies
+
+For the part of the website you interact with directly, we are using:
+
+*   **Next.js:** This is a powerful framework built on top of React that helps us build fast, modern websites. Next.js offers great performance, SEO benefits, and excellent developer experience. It fits our need for a multi-page website with dynamic animations and interactive elements similar to Rudderstack's site.
+
+Using Next.js ensures that your experience is smooth, responsive on mobile devices, and attractive with a design that stays true to the existing Obzervable look and feel.
+
+## Backend Technologies
+
+Behind the scenes, the website is powered by scalable and reliable backend services. Our choices include:
+
+*   **AWS Amplify:** This service handles both the backend and storage aspects of the site. AWS Amplify makes it easy to deploy and manage our application without worrying about server maintenance. It ensures our site runs reliably and can handle growth, even during updates.
+
+*   **rstreams Platform:** The core of our service is built upon the open-source rstreams platform. We have enhanced rstreams with additional features like:
+
+    *   A monitoring layer for improved visibility
+    *   Data and schema validation directly in the data streams
+    *   An in-browser data flow builder
+    *   AI integration for generating data flows
+    *   Ready-made templates for common extract, transform, and loading patterns
+
+These enhancements make the platform robust, dynamic, and suited for complex enterprise data needs.
+
+## Infrastructure and Deployment
+
+To keep the site running smoothly and securely, we have made the following infrastructure choices:
+
+*   **AWS Amplify Hosting:** Our website is deployed on AWS Amplify. This means updates can be rolled out quickly, the site stays secure, and it scales automatically to handle traffic spikes.
+*   **CI/CD Pipelines:** Although not detailed here, our development process incorporates continuous integration and continuous deployment pipelines. These pipelines automate testing and deployment, ensuring that every update is delivered as reliably as possible.
+*   **Version Control:** We also use robust version control systems (like Git) to manage and track changes in our codebase, ensuring that our team can work collaboratively and safely.
+
+These decisions support a highly reliable and scalable website that is easy to update and maintain.
+
+## Third-Party Integrations
+
+Our project also includes integrations with external services to enhance functionality:
+
+*   **Analytics and SEO Tools:** The site is optimized for both human visitors and AI, with meta tags and detailed analytics (such as Google Analytics) integrated to track performance and improve searchability.
+*   **Call-to-Action Integrations:** Sign-up prompts and lead capture links direct interested users to an external registration platform. This is designed to ensure smooth customer engagement without complicating the site’s primary purpose.
+*   **Additional Services:** Future integrations with other third-party services (such as CRM or marketing tools) are planned to further enhance the overall functionality of the platform.
+
+## Security and Performance Considerations
+
+We place a high priority on both the security and performance of the Obzervable Site. Here’s how we manage these aspects:
+
+*   **Security Measures:**
+
+    *   The site is hosted in a secure AWS environment which offers built-in security features.
+    *   Although we do not use a dedicated authentication layer on this site (as it is only for showcasing), data protection and secure communications are ensured by platform-level configurations.
+
+*   **Performance Optimizations:**
+
+    *   Next.js provides server-side rendering and code-splitting, which lead to fast load times and excellent user experience on both desktop and mobile devices.
+    *   Our CI/CD pipeline and AWS Amplify hosting ensure that updates are smooth and that the site can quickly adapt to increased web traffic.
+
+These strategies make sure that visitors receive a secure, fast, and accessible experience.
+
+## Conclusion and Overall Tech Stack Summary
+
+In summary, the Obzervable Site is built with careful technology decisions that align with our goal of showcasing a secure, advanced, and user-friendly data platform. Here’s a quick recap of our choices:
+
+*   **Frontend:** Next.js for a modern, responsive, and dynamic interface.
+*   **Backend:** AWS Amplify for hosting and storage and the enhanced rstreams platform to power our data streaming and monitoring features.
+*   **Infrastructure:** Reliable deployment with AWS Amplify, continuous integration/deployment practices, and solid version control.
+*   **Third-Party Integrations:** Effective use of analytics, SEO, and external sign-up systems to enrich user engagement and insights.
+*   **Security & Performance:** Strong focus on secure hosting, fast loading times, and resilience across devices.
+
+These components come together to form a tech stack that not only highlights the technical power of the Obzervable platform but also creates a seamless and engaging experience for developers, architects, CTOs, and other interested users.
+
+Thank you for taking the time to understand the technology choices behind the Obzervable Site. We believe these decisions lay a solid foundation for a site that is both innovative and user-friendly.

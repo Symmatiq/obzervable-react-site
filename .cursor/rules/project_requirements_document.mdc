@@ -1,0 +1,264 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Requirements Document (PRD) for Obzervable Site
+
+## 1. Project Overview
+
+The Obzervable Site is a multi-page website designed to showcase the powerful capabilities of the Obzervable platform. It is created to capture the interest of potential customers, developers, architects, and CTOs by clearly presenting the platform's advanced features. By leveraging a clean, interactive design inspired by modern enterprise platforms, the website will communicate the unique benefits of Obzervable's domain-driven design approach, data mesh architecture, and advanced observability features using clear, structured information that is easy to understand.
+
+### Core Value Propositions
+
+1. **Enterprise Data Strategy Excellence**
+   - Domain-driven design implementation
+   - Data mesh architecture support
+   - Polyglot data handling capabilities
+   - Real-time event streaming and processing
+
+2. **Advanced Monitoring & Observability**
+   - Enhanced monitoring capabilities
+   - Real-time data flow visualization
+   - Comprehensive system health metrics
+   - Predictive analytics and alerts
+
+3. **AI-Powered Innovation**
+   - AI-driven flow generation
+   - Intelligent data pattern recognition
+   - Automated optimization suggestions
+   - Smart anomaly detection
+
+4. **Developer-First Experience**
+   - In-browser data flow builder
+   - Pre-made ETL templates
+   - Robust data and schema validation
+   - Extensive API documentation
+
+## 2. In-Scope vs. Out-of-Scope
+
+### In-Scope:
+
+#### Landing Page & Navigation
+- Dynamic hero section with engaging animations
+- Clear value proposition messaging
+- Intuitive navigation menu (Home, Features, Documentation, About, Contact)
+- Strategic call-to-action placement
+
+#### Core Feature Sections
+1. **Overview & Platform Architecture**
+   - Domain-driven design principles
+   - Data mesh implementation
+   - Event streaming capabilities
+   - System architecture diagrams
+
+2. **Enhanced Monitoring Hub**
+   - Real-time monitoring features
+   - Dashboard previews
+   - Integration capabilities
+   - Alert system overview
+
+3. **AI Integration Showcase**
+   - AI flow generation demos
+   - Pattern recognition examples
+   - Automated optimization features
+   - Use case demonstrations
+
+4. **Developer Tools & Resources**
+   - Interactive data flow builder
+   - ETL template library
+   - API documentation
+   - Integration guides
+
+5. **Customer Success Stories**
+   - Case studies
+   - Implementation examples
+   - ROI metrics
+   - Testimonials
+
+### Out-of-Scope:
+
+1. **Authentication System**
+   - User registration processing
+   - Login system implementation
+   - Account management features
+
+2. **Active Data Processing**
+   - Real-time data handling
+   - Actual ETL operations
+   - Live system monitoring
+
+3. **Third-Party Integrations**
+   - CRM system connections
+   - External analytics tools
+   - Payment processing
+
+4. **Content Management System**
+   - Dynamic content updates
+   - User-generated content
+   - Blog management system
+
+## 3. User Flow
+
+### Primary User Journey
+
+1. **Initial Landing**
+   - Engaging hero section with platform overview
+   - Clear value propositions
+   - Primary call-to-action buttons
+
+2. **Feature Exploration**
+   - Interactive feature demonstrations
+   - Technical capability showcase
+   - Use case examples
+
+3. **Technical Deep Dive**
+   - Detailed documentation access
+   - API integration guides
+   - Implementation examples
+
+4. **Validation & Social Proof**
+   - Customer success stories
+   - Case studies
+   - Performance metrics
+
+5. **Conversion Path**
+   - Clear call-to-action prompts
+   - External signup process
+   - Documentation resources
+
+## 4. Technical Requirements
+
+### Frontend Development
+
+1. **Framework & Libraries**
+   - Next.js 14 implementation
+   - React-based components
+   - Modern CSS frameworks
+   - Animation libraries
+
+2. **Performance Optimization**
+   - Lazy loading implementation
+   - Image optimization
+   - Code splitting
+   - Performance monitoring
+
+3. **Responsive Design**
+   - Mobile-first approach
+   - Tablet optimization
+   - Desktop enhancement
+   - Cross-browser compatibility
+
+### Backend Integration
+
+1. **AWS Amplify Setup**
+   - Hosting configuration
+   - API integration
+   - Storage setup
+   - Security implementation
+
+2. **Data Management**
+   - Content delivery
+   - Asset management
+   - Cache optimization
+   - Performance monitoring
+
+## 5. Non-Functional Requirements
+
+### Performance Metrics
+
+1. **Load Time Targets**
+   - Initial page load: < 2 seconds
+   - Subsequent page loads: < 1 second
+   - Time to interactive: < 3 seconds
+
+2. **Optimization Goals**
+   - Google PageSpeed score: > 90
+   - Mobile responsiveness: 100%
+   - Cross-browser compatibility: 100%
+
+### Security Requirements
+
+1. **Infrastructure Security**
+   - SSL/TLS implementation
+   - DDoS protection
+   - Security headers
+   - Regular security audits
+
+2. **Content Security**
+   - Asset protection
+   - CORS policies
+   - XSS prevention
+   - Content validation
+
+### SEO & Analytics
+
+1. **Search Engine Optimization**
+   - Meta tag optimization
+   - Structured data implementation
+   - Sitemap generation
+   - Robot.txt configuration
+
+2. **Analytics Integration**
+   - Google Analytics 4 setup
+   - Event tracking
+   - Conversion monitoring
+   - Performance tracking
+
+## 6. Implementation Timeline
+
+### Phase 1: Foundation (Weeks 1-2)
+- Project setup
+- Core architecture
+- Basic page structure
+
+### Phase 2: Core Features (Weeks 3-4)
+- Landing page
+- Navigation
+- Key feature sections
+
+### Phase 3: Technical Content (Weeks 5-6)
+- Documentation
+- API guides
+- Integration examples
+
+### Phase 4: Enhancement (Weeks 7-8)
+- Animations
+- Interactivity
+- Performance optimization
+
+### Phase 5: Launch Preparation (Weeks 9-10)
+- Testing
+- SEO implementation
+- Analytics setup
+- Content finalization
+
+## 7. Success Metrics
+
+### Technical Metrics
+- Page load times
+- Mobile responsiveness scores
+- SEO rankings
+- Performance benchmarks
+
+### Business Metrics
+- Visitor engagement
+- Documentation usage
+- Demo requests
+- Conversion rates
+
+## 8. Maintenance & Updates
+
+### Regular Maintenance
+- Weekly content updates
+- Monthly performance reviews
+- Quarterly security audits
+- Annual feature assessments
+
+### Update Schedule
+- Content refreshes: Weekly
+- Feature updates: Monthly
+- Major releases: Quarterly
+- Platform upgrades: As needed
+
+This document provides a comprehensive blueprint for the Obzervable Site project, ensuring that all stakeholders understand the scope, requirements, and success criteria for the implementation. 

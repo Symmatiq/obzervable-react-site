@@ -1,0 +1,108 @@
+---
+description: Apply these rules when making changes to the project
+globs: 
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Implementation plan
+
+This implementation plan is divided into five phases. Please review the project directory before starting to avoid duplicating any existing setup.
+
+## Phase 1: Environment Setup
+
+1.  **Prevalidation & Directory Check**: Verify if the current directory is already an Obzervable site project by checking for the existence of a `package.json` file. (PRD: Project Setup)
+
+2.  **Install Core Tools**: Ensure Node.js v20.2.1 is installed. Run `node -v` to confirm the version. If not installed, please install Node.js v20.2.1. (Tech Stack: Core Tools)
+
+3.  **Setup Next.js 14 Environment**:
+
+    *   Since the frontend tech stack uses Next.js, create a new Next.js project using version 14 to ensure compatibility with current AI coding tools. (Tech Stack: Frontend)
+    *   Run the command: `npx create-next-app@14 obzervable-site` in your terminal. (PRD: Project Setup)
+
+4.  **Cursor IDE Setup**:
+
+    *   Check if you are using Cursor. If so, create a file named `cursor_metrics.md` in the project root. Refer to the file `cursor_project_rules.mdc` for additional guidance. (Tech Stack: IDE Instructions)
+    *   Create a `.cursor` directory in the project root if it does not already exist. (Cursor: Environment Setup)
+    *   *Note*: Since our backend tech stack uses AWS Amplify instead of Supabase, there is **no need** to add MCP configuration for Supabase at this time.
+
+5.  **Validation**: Confirm project initialization by verifying that `package.json` exists, and the Next.js project structure has been created.
+
+## Phase 2: Frontend Development
+
+1.  **Site Structure & Routing**: Create the core page directories and files within the `src/app/` directory, following Next.js 14 App Router conventions and mirroring Rudderstack's structure:
+    *   `(home)/page.tsx` (Root landing page)
+    *   `products/page.tsx`
+    *   `solutions/page.tsx`
+    *   `integrations/page.tsx`
+    *   `docs/page.tsx`
+    *   `resources/page.tsx`
+    *   `pricing/page.tsx`
+    *   Ensure a root `layout.tsx` and `global.css` are present.
+
+2.  **UI Styling and Look & Feel**:
+
+    *   Integrate the design cues (colors, fonts, logos) from the existing Obzervable website. (PRD: Site Content and Instructions)
+    *   Use CSS modules or a preferred CSS-in-JS solution to ensure styles are scoped to components. (Design Preferences)
+
+3.  **Menu and Navigation**:
+
+    *   Implement a navigation menu that mirrors Rudderstack's structure (Products, Solutions, Integrations, Docs, Resources, Pricing). Create a shared component (e.g., `src/components/Navbar.tsx`) and include links to each page. (PRD: Specific Page Requirements)
+
+4.  **Animations and Mobile Responsiveness**:
+
+    *   Incorporate animations similar to Rudderstack's page animations. Consider using libraries such as Framer Motion or CSS animations for smooth effects. (PRD: Design Preferences)
+    *   Ensure all pages are mobile-responsive by using media queries or responsive frameworks. (PRD: Additional Requirements)
+
+5.  **Google Analytics Integration**:
+
+    *   Integrate Google Analytics by adding the GA script to `/pages/_app.js` or using the next/script component. (PRD: Additional Requirements)
+
+6.  **Prevalidation**: Test each page in a local browser ensuring correct layout, responsive behavior, and animation effects. (Q&A: UI Validation)
+
+## Phase 3: Backend Development
+
+1.  **AWS Amplify Initialization**:
+
+    *   Install the AWS Amplify CLI (if not already installed) and configure it with your AWS account.
+    *   Run `amplify init` in the project root and follow the prompts to set up the environment. (Tech Stack: Backend & Storage)
+
+2.  **AWS Amplify Hosting**:
+
+    *   Add hosting to the project by running `amplify add hosting` and choosing the appropriate settings for a web app. (Tech Stack: Deployment)
+
+3.  **Content Management & Storage Setup**:
+
+    *   In AWS Amplify, configure storage and any backend APIs if necessary for dynamic content (e.g., customer testimonials, case studies) even though authentication is handled externally. (PRD: Specific Page Requirements)
+
+4.  **Prevalidation**: Verify the AWS Amplify configuration by checking that the `amplify/` directory has been created and the CLI is configured properly.
+
+## Phase 4: Integration
+
+1.  **Connect Frontend to AWS Amplify**:
+
+    *   Ensure the frontend Next.js application integrates seamlessly with AWS Amplify hosting services. Update configuration files as necessary. (Tech Stack: Integration)
+
+2.  **External Links for Registration**:
+
+    *   Add external signup links on relevant pages (for example in the navbar or home page CTA) which direct users to the registration site. (PRD: Specific Page Requirements)
+
+3.  **SEO and Analytics Configuration**:
+
+    *   Fine-tune meta tags, page descriptions, and canonical URLs in each page to focus on AI usability aspects. (PRD: Additional Requirements)
+
+4.  **Prevalidation**: Browse the site locally and confirm that API calls (if any) to AWS Amplify and external endpoints work as expected, and that analytics scripts load correctly.
+
+## Phase 5: Deployment
+
+1.  **Final Build and Deployment**:
+
+    *   Build the Next.js project by running `npm run build`. (Tech Stack: Frontend)
+    *   Deploy the site via AWS Amplify by running `amplify publish` or by pushing your changes to the configured branch if using CI/CD integration. (Tech Stack: Deployment)
+
+2.  **Validation**:
+
+    *   After deployment, verify that the website is accessible, the animations perform as intended, and the Google Analytics script is firing properly.
+    *   Test the site across multiple devices to ensure mobile responsiveness. (Q&A: End-to-End Testing)
+
+This concludes the implementation plan for the Obzervable website project. Follow each phase step-by-step, ensuring validation after each critical change.

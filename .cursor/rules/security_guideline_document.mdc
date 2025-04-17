@@ -1,0 +1,157 @@
+---
+description: Apply these rules when making changes to the project
+globs:
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# Implementation Plan for Obzervable Site
+
+This document outlines a step-by-step implementation plan to build the Obzervable website. Each phase of the project will adhere to secure coding, input validation, encryption, and other best practices as described in our core security principles.
+
+## 1. Project Preparation & Planning
+
+*   **Requirements & Stakeholder Alignment**
+
+    *   Confirm the project goals, target audience, and value propositions with stakeholders.
+    *   Review the existing Obzervable site content and branding (colors, fonts, and logo).
+    *   Identify all key pages: Landing, Features, Documentation, About, and Contact.
+    *   Gather technical stack details: Next.js for frontend, AWS Amplify for hosting and back-end storage, integration with the open-source rstreams platform, and AI tools for development.
+
+*   **Architecture & Security Design**
+
+    *   Outline the system’s architecture using Domain-Driven Design principles.
+
+    *   Define clear roles and responsibilities (RBAC) for content management and technical operations.
+
+    *   Integrate security by design:
+
+        *   Input validation and output encoding for all interactive elements
+        *   Enforce HTTPS and secure session management
+        *   Set secure defaults for all services
+
+    *   Create a project roadmap with milestones and sprints.
+
+## 2. Initial Setup & Infrastructure
+
+*   **Development Environment**
+
+    *   Set up Next.js project structure using the latest stable version.
+    *   Configure the project with a secure defaults configuration (proper error handling, logging without sensitive data exposure, etc.).
+    *   Integrate the IDE (Cursor) with tools and linters that enforce secure coding standards.
+
+*   **AWS Amplify Configuration**
+
+    *   Provision AWS Amplify environment with secure certificate management for TLS/HTTPS endpoints.
+    *   Set up continuous integration and deployment (CI/CD) pipelines with secure credentials management and lock files for dependencies.
+    *   Implement secure file permissions and environment variable handling (avoid hardcoding secrets).
+
+*   **Dependency Management**
+
+    *   Use vetted dependencies and run SCA tools for vulnerability scanning.
+    *   Maintain a lockfile (package-lock.json) to ensure deterministic builds.
+
+## 3. Frontend Development: Next.js Implementation
+
+*   **Routing & Page Structure**
+
+    *   Implement a menu structure similar to Rudderstack: Home, Features, Documentation, About, and Contact.
+    *   Organize pages using Next.js pages directory, with code-splitting and lazy loading for performance.
+
+*   **UI/UX Design & Branding**
+
+    *   Create the Landing Page with engaging visuals, animations (dynamic elements similar to Rudderstack), and clear call-to-action (CTA) buttons linking to the external signup site.
+
+    *   Develop the Features Page highlighting:
+
+        *   Enhanced monitoring
+        *   In-browser data flow builder
+        *   AI integration
+        *   Data/schema validation
+        *   Pre-made ETL templates
+
+    *   Build the Documentation & Developer Hub with mobile-responsive design, interactive code snippets, and tutorials.
+
+    *   Ensure the navigation and UI components adhere to accessibility guidelines.
+
+*   **Security in UI Components**
+
+    *   Sanitize all dynamic user inputs (if applicable) and ensure output encoding to mitigate XSS attacks.
+    *   Set up Content Security Policies (CSP), secure cookies (HttpOnly, Secure, and SameSite), and other security headers.
+
+## 4. Backend & API Integrations
+
+*   **Core Platform & Data Management
+
+    *   Integrate with the open-source rstreams platform, ensuring data flows securely between the frontend and the platform.
+    *   Validate API inputs and implement authorization checks in each backend endpoint.
+
+*   **External Signup Integration**
+
+    *   Implement call-to-action links that securely redirect to the external signup site. Validate these redirects to avoid open redirect vulnerabilities.
+
+*   **AI Tools Integration**
+
+    *   Leverage GPT-4 O1, GPT o1, Claude, Deepseek, and Gemini tools responsibly for real-time content generation and assistance during development. Ensure encryption in transit for API calls.
+
+## 5. SEO & Analytics
+
+*   **SEO Strategy**
+
+    *   Create meta tags and comprehensive on-page SEO content ensuring the site is AI-friendly.
+    *   Implement structured data to help AI models and search engines better understand the content.
+
+*   **Analytics Integration**
+
+    *   Integrate Google Analytics with proper data tramsmission over HTTPS.
+    *   Monitor and enforce rate-limiting on analytics endpoints as needed.
+
+## 6. Mobile Responsiveness & Performance Optimization
+
+*   **Mobile Design**
+
+    *   Ensure that all pages are highly usable and responsive on mobile devices.
+    *   Use performance best practices: efficient asset loading, caching strategies, and minimizing client-side scripts where possible.
+
+*   **Testing & Optimization**
+
+    *   Implement performance testing on multiple devices.
+    *   Use code splitting, lazy-loading of non-critical resources, and a Content Delivery Network (CDN) where applicable.
+
+## 7. Testing, Audit & Deployment
+
+*   **Quality Assurance**
+
+    *   Conduct unit, integration, and end-to-end tests with a focus on security (e.g., input validation and error handling tests).
+    *   Perform cross-browser and mobile responsiveness testing.
+
+*   **Security Audits & Penetration Testing**
+
+    *   Run security scans (including SAST and DAST) to ensure vulnerabilities such as XSS, insecure defaults, and misconfigurations are addressed.
+    *   Validate that all endpoints validate and sanitize inputs, and that sessions, cookies, and tokens are securely managed.
+
+*   **Deployment & Release**
+
+    *   Deploy to AWS Amplify using the secure CI/CD pipeline.
+    *   Monitor logs, error reports, and analytics during and after deployment.
+
+## 8. Post-Deployment & Continuous Improvement
+
+*   **Monitoring & Maintenance**
+
+    *   Implement monitoring for performance, usage, and potential security breaches.
+    *   Schedule regular updates for dependencies, libraries, and server configurations.
+
+*   **Feedback & Iteration**
+
+    *   Gather feedback from users (including accessibility and performance metrics).
+    *   Plan further enhancements based on usage data and security audit outcomes.
+
+*   **Documentation & Training**
+
+    *   Update technical documentation for internal use and external customer/developer guidance.
+    *   Train teams on maintaining secure practices and operating the live site.
+
+## Conclusion
+
+This step-by-step plan ensures that the Obzervable website will be built with clear emphasis on performance, usability, security, and scalability. Each phase—from initial planning to post-deployment maintenance—is designed to uphold our guiding principles of security, accessibility, and developer-centric design, aligning perfectly with both the project goals and industry best practices.

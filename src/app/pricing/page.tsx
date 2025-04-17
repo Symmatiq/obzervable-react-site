@@ -1,0 +1,305 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { CheckIcon } from '@heroicons/react/24/solid';
+import Button from '@/components/Button';
+import AnimatedElement from '@/components/AnimatedElement';
+
+export const metadata: Metadata = {
+  title: 'Pricing - Obzervable',
+  description: 'Choose the right plan for your observability needs. Simple, transparent pricing with no hidden fees.',
+};
+
+const pricingPlans = [
+  {
+    name: 'Free',
+    description: 'Get started with basic observability',
+    price: '$0',
+    period: 'forever',
+    features: [
+      'Up to 3 services',
+      '5 GB log storage',
+      '7 days data retention',
+      'Basic alerting',
+      'Community support',
+    ],
+    cta: 'Get Started',
+    popular: false,
+  },
+  {
+    name: 'Pro',
+    description: 'Perfect for growing teams',
+    price: '$49',
+    period: 'per month',
+    features: [
+      'Up to 25 services',
+      '100 GB log storage',
+      '30 days data retention',
+      'Advanced alerting & notifications',
+      'Custom dashboards',
+      'API access',
+      'Email support',
+    ],
+    cta: 'Start Free Trial',
+    popular: true,
+  },
+  {
+    name: 'Enterprise',
+    description: 'For organizations with advanced needs',
+    price: 'Custom',
+    period: '',
+    features: [
+      'Unlimited services',
+      'Unlimited log storage',
+      'Custom data retention',
+      'SSO integration',
+      'SLA guarantees',
+      'Dedicated account manager',
+      'Custom integrations',
+      'Phone & priority support',
+    ],
+    cta: 'Contact Sales',
+    popular: false,
+  },
+];
+
+const faqs = [
+  {
+    question: 'How does the free plan work?',
+    answer: 'Our free plan is completely free, forever. It includes basic monitoring capabilities for up to 3 services, 5 GB of log storage, and 7 days of data retention. It\'s perfect for individuals or small projects just getting started with observability.',
+  },
+  {
+    question: 'Can I switch plans at any time?',
+    answer: 'Yes, you can upgrade, downgrade, or cancel your plan at any time through your account dashboard. When upgrading, the new pricing takes effect immediately. When downgrading, changes will take effect at the end of your current billing cycle.',
+  },
+  {
+    question: 'Is there a setup fee?',
+    answer: 'No, there are no setup fees for any of our plans. You only pay the advertised price for your subscription.',
+  },
+  {
+    question: 'Do you offer annual billing?',
+    answer: 'Yes, we offer annual billing with a 15% discount compared to monthly billing. You can select annual billing when signing up or switch from your account settings.',
+  },
+  {
+    question: 'What payment methods do you accept?',
+    answer: 'We accept all major credit cards (Visa, Mastercard, American Express) and ACH transfers for annual Enterprise plans.',
+  },
+  {
+    question: 'Do you offer custom plans?',
+    answer: 'Yes, our Enterprise plan can be customized to your specific needs. Please contact our sales team to discuss your requirements and get a tailored quote.',
+  },
+];
+
+const comparisonFeatures = [
+  {
+    category: 'Core Features',
+    features: [
+      { name: 'Services', free: '3', pro: '25', enterprise: 'Unlimited' },
+      { name: 'Log Storage', free: '5 GB', pro: '100 GB', enterprise: 'Unlimited' },
+      { name: 'Data Retention', free: '7 days', pro: '30 days', enterprise: 'Custom' },
+    ],
+  },
+  {
+    category: 'Monitoring',
+    features: [
+      { name: 'Basic Metrics', free: '✓', pro: '✓', enterprise: '✓' },
+      { name: 'Custom Metrics', free: '✗', pro: '✓', enterprise: '✓' },
+      { name: 'APM', free: '✗', pro: '✓', enterprise: '✓' },
+      { name: 'Distributed Tracing', free: '✗', pro: 'Basic', enterprise: 'Advanced' },
+    ],
+  },
+  {
+    category: 'Alerting',
+    features: [
+      { name: 'Email Alerts', free: '✓', pro: '✓', enterprise: '✓' },
+      { name: 'Webhooks', free: '✗', pro: '✓', enterprise: '✓' },
+      { name: 'PagerDuty Integration', free: '✗', pro: '✓', enterprise: '✓' },
+      { name: 'Custom Alert Logic', free: '✗', pro: 'Basic', enterprise: 'Advanced' },
+    ],
+  },
+  {
+    category: 'Support',
+    features: [
+      { name: 'Documentation', free: '✓', pro: '✓', enterprise: '✓' },
+      { name: 'Community Support', free: '✓', pro: '✓', enterprise: '✓' },
+      { name: 'Email Support', free: '✗', pro: '✓', enterprise: '✓' },
+      { name: 'Phone Support', free: '✗', pro: '✗', enterprise: '✓' },
+      { name: 'SLA', free: '✗', pro: '✗', enterprise: '✓' },
+    ],
+  },
+];
+
+export default function PricingPage() {
+  return (
+    <main className="pt-16 pb-32">
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 text-center">
+        <AnimatedElement type="fadeIn">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            Simple, transparent pricing
+          </h1>
+        </AnimatedElement>
+        <AnimatedElement type="fadeIn" delay={0.2}>
+          <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-500">
+            Choose the plan that's right for your business. All plans include a 14-day free trial.
+          </p>
+        </AnimatedElement>
+      </section>
+
+      {/* Pricing Cards */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="grid md:grid-cols-3 gap-8">
+          {pricingPlans.map((plan, index) => (
+            <AnimatedElement key={plan.name} type="slideUp" delay={0.1 * index}>
+              <div 
+                className={`rounded-lg shadow-lg overflow-hidden ${
+                  plan.popular ? 'ring-2 ring-primary relative' : ''
+                }`}
+              >
+                {plan.popular && (
+                  <div className="absolute top-0 inset-x-0 transform translate-y-px">
+                    <div className="flex justify-center transform -translate-y-1/2">
+                      <span className="inline-flex rounded-full bg-primary px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
+                        Most Popular
+                      </span>
+                    </div>
+                  </div>
+                )}
+                <div className="p-6 bg-white">
+                  <h2 className="text-2xl font-semibold text-gray-900">{plan.name}</h2>
+                  <p className="mt-1 text-gray-500">{plan.description}</p>
+                  <p className="mt-4">
+                    <span className="text-4xl font-extrabold text-gray-900">{plan.price}</span>
+                    {plan.period && (
+                      <span className="text-base font-medium text-gray-500">/{plan.period}</span>
+                    )}
+                  </p>
+                  <ul className="mt-6 space-y-4">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start">
+                        <div className="flex-shrink-0">
+                          <CheckIcon className="h-6 w-6 text-green-500" aria-hidden="true" />
+                        </div>
+                        <p className="ml-3 text-base text-gray-700">{feature}</p>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-8">
+                    <Button
+                      href={plan.name === 'Enterprise' ? '/contact' : '/signup'}
+                      variant={plan.popular ? 'primary' : 'outline'}
+                      className="w-full"
+                    >
+                      {plan.cta}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </AnimatedElement>
+          ))}
+        </div>
+      </section>
+
+      {/* Feature Comparison */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gray-50 rounded-lg">
+        <AnimatedElement type="fadeIn">
+          <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-8">
+            Compare Plans
+          </h2>
+        </AnimatedElement>
+        <AnimatedElement type="slideUp" delay={0.2}>
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead>
+                <tr>
+                  <th className="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                    Feature
+                  </th>
+                  <th className="py-3 px-6 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                    Free
+                  </th>
+                  <th className="py-3 px-6 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                    Pro
+                  </th>
+                  <th className="py-3 px-6 text-center text-xs font-medium text-gray-500 uppercase tracking-wider w-1/4">
+                    Enterprise
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {comparisonFeatures.map((category) => (
+                  <>
+                    <tr key={category.category} className="bg-gray-50">
+                      <td
+                        colSpan={4}
+                        className="py-4 px-6 text-sm font-medium text-gray-900"
+                      >
+                        {category.category}
+                      </td>
+                    </tr>
+                    {category.features.map((feature) => (
+                      <tr key={feature.name}>
+                        <td className="py-4 px-6 text-sm font-medium text-gray-900">
+                          {feature.name}
+                        </td>
+                        <td className="py-4 px-6 text-sm text-gray-500 text-center">
+                          {feature.free}
+                        </td>
+                        <td className="py-4 px-6 text-sm text-gray-500 text-center">
+                          {feature.pro}
+                        </td>
+                        <td className="py-4 px-6 text-sm text-gray-500 text-center">
+                          {feature.enterprise}
+                        </td>
+                      </tr>
+                    ))}
+                  </>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </AnimatedElement>
+      </section>
+
+      {/* FAQs */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <AnimatedElement type="fadeIn">
+          <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-8">
+            Frequently Asked Questions
+          </h2>
+        </AnimatedElement>
+        <div className="space-y-6 divide-y divide-gray-200">
+          {faqs.map((faq, index) => (
+            <AnimatedElement key={faq.question} type="slideLeft" delay={0.1 * index}>
+              <div className="pt-6">
+                <dt className="text-lg font-medium text-gray-900">{faq.question}</dt>
+                <dd className="mt-2 text-base text-gray-500">{faq.answer}</dd>
+              </div>
+            </AnimatedElement>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-10 bg-primary rounded-lg text-center">
+        <AnimatedElement type="scale">
+          <h2 className="text-3xl font-extrabold text-white">
+            Ready to get started with Obzervable?
+          </h2>
+          <p className="mt-4 text-lg text-white/90">
+            Choose the plan that works for you and start your 14-day free trial today.
+          </p>
+          <div className="mt-8 flex justify-center">
+            <Button href="/signup" variant="primary" className="bg-white text-primary hover:bg-gray-50">
+              Start Your Free Trial
+            </Button>
+            <div className="ml-3">
+              <Button href="/contact" variant="outline" className="text-white border-white hover:bg-primary-light">
+                Contact Sales
+              </Button>
+            </div>
+          </div>
+        </AnimatedElement>
+      </section>
+    </main>
+  );
+} 

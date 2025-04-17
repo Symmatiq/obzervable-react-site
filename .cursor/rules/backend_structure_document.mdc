@@ -1,0 +1,6 @@
+---
+description: Apply these rules when making changes to the project
+globs: 
+alwaysApply: true
+---
+No backend for this site, it is purely static

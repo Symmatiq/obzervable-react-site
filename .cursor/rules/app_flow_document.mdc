@@ -1,0 +1,43 @@
+---
+description: Apply these rules when making changes to the project
+globs: 
+alwaysApply: true
+---
+
+Update this rule if user requested changes to the project requirement, etc.
+# App Flow Document for Obzervable Site
+
+## 1. Onboarding and Initial Engagement
+
+Upon arrival, visitors are greeted by a dynamic landing page showcasing Obzervable's core message: "Real-time Data, Simplified." The page immediately highlights key differentiators like domain-driven design, data mesh support, and event-driven architecture, targeting developers, architects, and CTOs. Clear calls-to-action (CTAs) prompt users to "Schedule a Demo" or explore features, directing them towards the external signup URL (`http://app.obzervable.com/signup`) for deeper engagement or platform access.
+
+## 2. Main Navigation and Site Structure
+
+The site employs a navigation structure inspired by platforms like Rudderstack, providing intuitive access to key areas:
+Navigation is persistent across the site, ensuring users can easily move between sections.
+The primary navigation items are: **Products, Solutions, Integrations, Docs, Resources, Pricing**.
+
+## 3. Core Content Flows
+
+- **From Home to Products/Solutions:** Visitors can navigate from the landing page to dedicated sections elaborating on Obzervable's offerings, potentially linking Products/Solutions to the core concepts (Domain-Driven, Data Mesh, Event-Driven) drawn from `obzervable.com`.
+- **Exploring Integrations:** The Integrations page lists compatible systems and platforms.
+- **Diving into Documentation:** The Docs Hub acts as a comprehensive resource center, potentially structured like Rudderstack's docs:
+    - Getting Started / How it Works
+    - Sources / Integration Guides
+    - Destinations / Use Cases
+    - SDKs / APIs
+    - Specific guides for Monitoring, Builder, AI integration, etc.
+- **Utilizing Resources:** The Resources section might contain case studies, blog posts, whitepapers, or other relevant materials.
+- **Understanding Pricing:** The Pricing page details subscription tiers or contact information for quotes.
+
+## 4. Settings and Personalization
+
+As an informational site without user accounts, settings are minimal, likely limited to potential display preferences (e.g., theme) managed locally. No account management or personalized data storage occurs on this site.
+
+## 5. Error Handling and Alternate Paths
+
+Standard error handling (e.g., 404 pages) directs users back to the Home page or relevant sections. Clear messaging guides users if they encounter broken links or navigation issues, maintaining a smooth experience.
+
+## 6. Conclusion: The Obzervable Journey
+
+The user journey is designed to guide technical audiences from initial awareness (Landing Page) through understanding Obzervable's unique approach (Products, Solutions), technical depth (Docs, Integrations), supporting materials (Resources), and finally towards direct engagement (Pricing page linking to external signup or demo request). The flow mirrors the logical progression of evaluating an enterprise platform, adapting Rudderstack's structural clarity to showcase Obzervable's distinct advantages in data mesh, event-driven architecture, and AI-powered development.
