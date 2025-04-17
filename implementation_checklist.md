@@ -55,6 +55,8 @@
 ## Phase 5: Deployment
 - [x] Choose deployment platform (AWS Amplify)
 - [x] Complete home page content and finalize all pages
+- [x] Create GitHub repository for the project
+- [x] Push code to GitHub repository
 - [ ] Initialize AWS Amplify in the project
 - [ ] Configure AWS Amplify hosting settings
 - [ ] Deploy the site to AWS Amplify
