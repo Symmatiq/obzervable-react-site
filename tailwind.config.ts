@@ -10,22 +10,22 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#002F5F",  // Deep blue
-          light: "#104A80",
-          dark: "#00213F"
+          DEFAULT: "#0952A5",  // Obzervable blue
+          light: "#2E6EBB",
+          dark: "#063A7A"
         },
         secondary: {
-          DEFAULT: "#00B8A9",  // Vibrant teal
-          light: "#0FDBCA",
-          dark: "#008C82"
+          DEFAULT: "#1EC8B3",  // Obzervable teal
+          light: "#42E6D1",
+          dark: "#17A091"
         },
         accent: {
-          DEFAULT: "#F4F4F4",  // Soft grey
-          dark: "#E0E0E0"
+          DEFAULT: "#F8F8F8",  // Light gray
+          dark: "#E6E6E6"
         }
       },
       fontFamily: {
-        sans: ["Roboto", "Open Sans", "ui-sans-serif", "system-ui", "-apple-system", "sans-serif"]
+        sans: ["Inter", "Roboto", "system-ui", "-apple-system", "sans-serif"]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
