@@ -7,13 +7,13 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
   title: 'Obzervable - Real-time Data, Simplified',
-  description: 'Obzervable empowers developers with domain-driven design, data mesh support, and event-driven architecture for better data observability.',
+  description: 'Obzervable delivers real-time data streaming with domain-driven design, data mesh architecture, and event-driven principles for modern enterprises.',
 };
 
 const features = [
   {
-    title: 'Domain-Driven Design',
-    description: 'Build systems that truly reflect your business with our domain-driven approach to data architecture.',
+    title: 'Data Mesh Architecture',
+    description: 'Embrace decentralized data ownership with domain-driven pipelines, enabling teams to treat data as a product while improving governance and quality.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
@@ -21,8 +21,8 @@ const features = [
     ),
   },
   {
-    title: 'Data Mesh Support',
-    description: 'Embrace decentralized data ownership and governance with our comprehensive data mesh capabilities.',
+    title: 'Domain-Driven Design',
+    description: 'Build pipelines tailored to business domains, ensuring data reflects real-world processes for simpler complex integrations and better business alignment.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
         <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: 'Event-Driven Architecture',
-    description: 'React to changes in real-time with our powerful event streaming and processing framework.',
+    description: 'Capture and replay events for robust, auditable systems with durable, rewindable queues that ensure historical data access and real-time processing.',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.348 14.651a3.75 3.75 0 0 1 0-5.303m5.304 0a3.75 3.75 0 0 1 0 5.303m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.007H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
@@ -42,8 +42,8 @@ const features = [
 
 const benefits = [
   {
-    title: 'Enhanced Monitoring',
-    description: 'Get comprehensive visibility into your data flows with real-time monitoring and alerts.',
+    title: 'Enhanced Monitoring & Alerts',
+    description: 'Gain granular insights with function-level monitoring and receive instant alerts for anomalies, ensuring proactive issue resolution.',
     color: 'bg-blue-50',
     iconColor: 'text-primary',
     icon: (
@@ -54,7 +54,7 @@ const benefits = [
   },
   {
     title: 'In-browser Data Flow Builder',
-    description: 'Visually design and deploy data pipelines with our intuitive drag-and-drop interface.',
+    description: 'Visually design and deploy data pipelines with our intuitive drag-and-drop interface, reducing development time from days to hours.',
     color: 'bg-teal-50',
     iconColor: 'text-secondary',
     icon: (
@@ -65,7 +65,7 @@ const benefits = [
   },
   {
     title: 'AI-Powered Development',
-    description: 'Leverage AI to generate data flows, detect anomalies, and optimize your data pipelines.',
+    description: 'Automate pipeline creation with AI, generating optimized code for bots and flows to accelerate development compared to manual setups.',
     color: 'bg-violet-50',
     iconColor: 'text-violet-600',
     icon: (
@@ -75,8 +75,8 @@ const benefits = [
     ),
   },
   {
-    title: 'Data & Schema Validation',
-    description: 'Ensure data quality with robust validation rules and real-time schema enforcement.',
+    title: 'Data Validation & Quality',
+    description: 'Ensure data quality with robust validation rules and schema enforcement from the source, improving your overall data reliability and trust.',
     color: 'bg-amber-50',
     iconColor: 'text-amber-600',
     icon: (
@@ -85,6 +85,33 @@ const benefits = [
       </svg>
     ),
   },
+];
+
+const useCases = [
+  {
+    title: "Real-Time Analytics",
+    description: "Power dashboards and insights with sub-second latency, ideal for finance, retail, and time-sensitive business decisions."
+  },
+  {
+    title: "Event-Driven Microservices",
+    description: "Build responsive applications with microservices triggered by events, perfect for order processing in e-commerce."
+  },
+  {
+    title: "IoT Data Collection",
+    description: "Process high-volume sensor data in real-time, supporting smart cities, manufacturing, and connected devices."
+  },
+  {
+    title: "AI Retrieval-Augmented Generation",
+    description: "Enhance AI models with real-time data for dynamic responses, perfect for chatbots and recommendation engines."
+  },
+  {
+    title: "System Integration",
+    description: "Connect disparate systems (CRM, ERP) for unified data flows, enhancing operational efficiency across your business."
+  },
+  {
+    title: "Customer Data Platform",
+    description: "Unify customer data for personalized marketing, leveraging real-time streams for better customer experiences."
+  }
 ];
 
 const testimonials = [
@@ -115,7 +142,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-b from-gray-50 to-white">
         <Hero
           title="Real-time Data, Simplified"
-          subtitle="Empowering developers with domain-driven design, data mesh support, and event-driven architecture."
+          subtitle="Build scalable, event-driven systems with domain-driven design and data mesh architecture for modern enterprises."
           primaryCTA={{
             text: "Schedule a Demo",
             href: "http://app.obzervable.com/signup",
@@ -142,10 +169,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <AnimatedElement type="fadeIn" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Built for Modern Data Teams
+              Technical Excellence by Design
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Obzervable provides the tools and insights you need to build reliable, scalable data systems.
+              Obzervable provides enterprise-grade data architecture that aligns with modern data mesh principles.
             </p>
           </AnimatedElement>
 
@@ -177,10 +204,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <AnimatedElement type="fadeIn" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Key Benefits
+              Development Advantages
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how Obzervable can transform your data observability
+              Accelerate your data engineering with powerful, developer-friendly tools
             </p>
           </AnimatedElement>
 
@@ -209,61 +236,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* Use Cases Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <AnimatedElement type="fadeIn" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              How Obzervable Works
+              Powerful Use Cases
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A streamlined approach to data observability
+              Discover how Obzervable can transform your business across multiple domains
+            </p>
+          </AnimatedElement>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {useCases.map((useCase, index) => (
+              <AnimatedElement 
+                key={useCase.title}
+                type="slideUp"
+                delay={index * 0.1}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {useCase.title}
+                </h3>
+                <p className="text-gray-700">
+                  {useCase.description}
+                </p>
+              </AnimatedElement>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Operational Advantages Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <AnimatedElement type="fadeIn" className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Operational Advantages
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Run with confidence on enterprise-grade infrastructure
             </p>
           </AnimatedElement>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedElement type="slideUp" delay={0.1} className="text-center px-6">
-              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-primary">1</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Connect</h3>
+            <AnimatedElement type="slideUp" delay={0.1} className="bg-white rounded-xl shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Fully Managed Infrastructure</h3>
               <p className="text-gray-600">
-                Easily connect to your data sources and streaming platforms with our pre-built connectors.
+                Eliminate server management with AWS-backed, serverless operations for zero-maintenance deployment.
               </p>
             </AnimatedElement>
 
-            <AnimatedElement type="slideUp" delay={0.2} className="text-center px-6">
-              <div className="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-secondary">2</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Configure</h3>
+            <AnimatedElement type="slideUp" delay={0.2} className="bg-white rounded-xl shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Seamless Scaling</h3>
               <p className="text-gray-600">
-                Set up monitoring rules, validation criteria, and alerting preferences to match your needs.
+                Scale up/out automatically with serverless compute, handling traffic spikes without manual intervention.
               </p>
             </AnimatedElement>
 
-            <AnimatedElement type="slideUp" delay={0.3} className="text-center px-6">
-              <div className="w-20 h-20 bg-violet-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-violet-600">3</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Observe</h3>
+            <AnimatedElement type="slideUp" delay={0.3} className="bg-white rounded-xl shadow-md p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">AWS-Integrated Security</h3>
               <p className="text-gray-600">
-                Gain real-time insights into your data flows, quality metrics, and system health.
+                Leverage AWS's encryption and IAM for enterprise-grade security with simpler setup and management.
               </p>
             </AnimatedElement>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary/5">
+      {/* Testimonials */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <AnimatedElement type="fadeIn" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               What Our Customers Say
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Trusted by data teams worldwide
+              Hear from teams that have transformed their data architecture with Obzervable
             </p>
           </AnimatedElement>
 
@@ -275,22 +325,24 @@ export default function HomePage() {
                 delay={index * 0.1}
                 className="bg-white rounded-xl shadow-md p-8"
               >
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden relative">
-                    {/* Replace with actual image when available */}
-                    {/* <Image
-                      src={testimonial.avatar}
-                      alt={testimonial.author}
-                      fill
-                      className="object-cover"
-                    /> */}
+                <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4">
+                    {testimonial.avatar && (
+                      <Image
+                        src={testimonial.avatar}
+                        alt={testimonial.author}
+                        width={48}
+                        height={48}
+                        className="rounded-full"
+                      />
+                    )}
                   </div>
                   <div>
-                    <h4 className="font-bold text-gray-900">{testimonial.author}</h4>
-                    <p className="text-sm text-gray-600">{testimonial.role}</p>
+                    <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                    <p className="text-gray-600 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
-                <blockquote className="text-gray-700 italic">"{testimonial.quote}"</blockquote>
               </AnimatedElement>
             ))}
           </div>
@@ -299,33 +351,32 @@ export default function HomePage() {
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-white">
-        <AnimatedElement type="scale" className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to transform your data observability?
-          </h2>
-          <p className="text-xl mb-10 text-white/80">
-            Join the hundreds of organizations using Obzervable to build more reliable data systems.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button 
-              href="http://app.obzervable.com/signup" 
-              variant="primary"
-              className="bg-white text-primary hover:bg-gray-100"
-              size="lg"
-              external
-            >
-              Get Started Free
-            </Button>
-            <Button 
-              href="/contact" 
-              variant="outline" 
-              className="text-white border-white hover:bg-primary-light"
-              size="lg"
-            >
-              Contact Sales
-            </Button>
-          </div>
-        </AnimatedElement>
+        <div className="max-w-5xl mx-auto text-center">
+          <AnimatedElement type="fadeIn">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Transform Your Data Architecture?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Get started today with Obzervable and unlock the full potential of your data.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="http://app.obzervable.com/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                Schedule a Demo
+              </a>
+              <Link
+                href="/products"
+                className="bg-primary-light text-white font-semibold px-8 py-3 rounded-lg border border-white/30 hover:bg-primary-dark transition-colors"
+              >
+                Explore Products
+              </Link>
+            </div>
+          </AnimatedElement>
+        </div>
       </section>
     </main>
   );

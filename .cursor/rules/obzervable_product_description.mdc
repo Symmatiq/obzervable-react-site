@@ -1,0 +1,103 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+## Product Specification: Obzervable
+
+### Project Name
+
+**Obzervable**
+
+### Project Vision
+
+Obzervable is a web-based platform designed to empower data and app developers to build **event-driven, real-time streaming, microservice-based, and data mesh architectures** using Amazon Web Services (AWS). The platform simplifies the creation and management of **real-time data pipelines and streaming architectures**, enabling companies of all sizes to leverage data for applications such as real-time analytics, event-driven microservices, IoT data collection, AI-driven workflows, and more. Obzervable achieves this by combining an intuitive user experience with powerful **AI-assisted tools**, seamless AWS integration, and **rstreams**—an open-source SDK and platform for event streaming (available at [rstreams.org](http://rstreams.org/)). It aims to be the go-to solution for modern, data-driven development.
+
+**Core Value**: Obzervable reduces complexity for developers and accelerates time-to-market for businesses by simplifying the development and management of real-time data pipelines and streaming architectures on AWS.
+
+---
+
+### Target Audience
+
+- **Developers**:
+    - **Data Engineers**: Focused on building and optimizing data pipelines.
+    - **Full-stack or Backend Data Developers**: Building application data backends.
+- **Businesses**:
+    - **Small and Medium-sized Businesses (SMBs)**: For accessible data engineering solutions.
+    - **Larger Companies**: For scalable, enterprise-grade data needs.
+    - **Startups**: Focused on rapid, data-driven application development.
+- **Industries**: IoT, e-commerce, fintech, healthcare, logistics, and any sector requiring robust, real-time data pipelines.
+- **No Vertical Focus**: The platform is industry-agnostic, applicable wherever real-time data processing is critical.
+
+---
+
+### Use Cases
+
+Obzervable supports a wide range of applications, including:
+
+- **Real-time Analytics**: Process and visualize live data streams for immediate business insights.
+- **Event-driven Microservices**: Build responsive, decoupled applications triggered by events.
+- **IoT Data Collection**: Aggregate and manage data from IoT devices at scale.
+- **AI-driven Workflows**: Enable AI models to process and act on streaming data in real time.
+- **Scalable Backend Applications**: Support growing workloads with a modular, microservice-based architecture.
+- **System Migration Optimization**: Efficiently transition legacy systems, schemas, or cloud setups to modern architectures.
+- **Customer Data Platform**: Centralize customer data for marketing, personalization, and analytics.
+- **Data Integration**: Connect, transform, and load data from external services (e.g., PropertyWare) into databases like PostgreSQL.
+
+---
+
+### Core Features
+
+1. **Secure User Accounts**
+    - **Role-based Access Control (RBAC)**: Supports roles such as admin, developer, and read-only users.
+    - **Multi-factor Authentication (MFA)**: Implemented via AWS Cognito for enhanced security.
+    - **Granular Permissions**: Configurable access levels for managing data pipelines, APIs, and subscriptions.
+2. **Signup and Subscription Model**
+    - **Pricing Tiers**:
+        - **Free**: 1 flow, 5 bots, 10MB file storage, 5MB database storage, 1 million monthly events.
+        - **Starter**: 5 flows, 20 bots, 100MB file storage, 50MB database storage, 3 million monthly events.
+        - **Pro**: 15 flows, 100 bots, 500MB file storage, 200MB database storage, .
+        - **Growth**: 50 flows, 500 bots, 2GB file storage, 500MB database storage.
+        - **Enterprise**: Unlimited flows, bots, file storage, and database storage (custom pricing).
+    - **AWS Costs**: Passed through to customers with a configurable **5% markup** per account for operational overhead.
+    - **Free Trial**: 14-day trial with access to limited features (e.g., Starter-tier equivalent).
+    - **Self-service Subscription Management**: A user portal for managing plans, viewing usage, and upgrading/downgrading subscriptions.
+3. **Payment Gateway Integration**
+    - **Supported Providers**: Stripe and PayPal for seamless billing.
+    - **Features**: Invoice generation, payment history tracking, and auto-scaling billing adjustments based on AWS resource consumption.
+4. **Deployment Flexibility**
+    - **Hosted Multitenant Architecture**: A fully managed SaaS offering hosted on Obzervable’s AWS infrastructure.
+    - **Self-hosted Option**: Deployable into a customer’s AWS account using **AWS Cloud Development Kit (CDK)** templates. Customers can augment the installation (e.g., add custom integrations) but cannot modify the core stacks for consistency and supportability.
+    - **High Availability**: Built with fault-tolerant, fully managed AWS services.
+5. **AI-First Data Flow Development**
+    - **Natural Language Prompts**: AI-driven development allows users to describe flows in plain English. Examples:
+        - "Create a flow that integrates with PropertyWare, captures all data types, transforms the data, and loads it into my PostgreSQL database with tables matching PropertyWare entity names."
+        - "Build a flow that sends a Slack message to the errors channel whenever an error event is detected."
+    - **Full Code Integration**: Advanced users can edit AWS Lambda functions in **TypeScript/Node.js** using their preferred IDE.
+    - **Pre-built Templates**: Available for common use cases like IoT ingestion and real-time analytics.
+    - **AWS Bedrock Integration**: Leverages AWS Bedrock for AI model deployment and inference within flows.
+    - **MCP (Model Context Protocol)**: A custom API layer enabling AI agents to interact with external services (e.g., Slack, databases) in a structured, AI-understandable format.
+6. **GitHub Integration**
+    - **Synchronization**: Syncs data pipeline configurations and code with GitHub repositories.
+    - **Version Control**: Supports infrastructure-as-code (IaC) and microservices versioning.
+    - **CI/CD**: Integrates with **GitHub Actions** or **AWS CodePipeline** for continuous integration and deployment.
+7. **Real-time Streaming and Data Mesh Support**
+    - **rstreams**: An open-source SDK and platform (see [rstreams.org](http://rstreams.org/)) for event streaming. Obzervable builds on rstreams to manage real-time flows using AWS services like **Amazon Kinesis** and **Amazon Kinesis Data Firehose**.
+    - **Data Mesh Architecture**: Guides developers into a microservice architecture with **domain-driven design**. Each domain owns and publishes its data, simplifying transport and synchronization across domains.
+    - **Event Sourcing and CQRS**: Supports **Event Sourcing** (storing state as a sequence of events) and **Command Query Responsibility Segregation (CQRS)** for building scalable microservices.
+8. **Monitoring and Analytics**
+    - **Dashboards**: Built-in visualizations for pipeline performance, latency, and error rates.
+    - **AWS CloudWatch Integration**: Provides logs, metrics, and custom dashboards.
+    - **Alerts**: Configurable notifications (email, Slack, etc.) for pipeline failures or user-defined thresholds.
+9. **Extensibility**
+    - **API-first Design**: Offers **RESTful** and **GraphQL** endpoints via **AWS API Gateway**.
+    - **Webhooks**: Supports integration with external systems via webhook triggers.
+    - **Plugin Ecosystem**: Enables third-party tool integrations (e.g., Snowflake, Databricks).
+    - **MCP Interface**: Facilitates AI agent communication with external services.
+10. **Playground**
+    - **Purpose**: A visualization tool for building and managing data flows.
+    - **Development Modes**:
+        - **Low-code/No-code**: UI-based bot editing for non-technical users.
+        - **Full-code**: IDE integration for advanced developers.
+    - **GitHub Sync**: Ensures compatibility between UI-based and code-based workflows.
+    - **Visualization**: Parses code (e.g., package.json) to visualize flows, reusing **D3** rendering from the Obzerve module.

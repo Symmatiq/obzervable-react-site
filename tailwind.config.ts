@@ -9,11 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "#0952A5",  // Obzervable blue
-          light: "#2E6EBB",
-          dark: "#063A7A"
-        },
+        primary: "#5b58fd", // Simplified to a single hex code
+        "primary-light": "#7296FF",
+        "primary-dark": "#3358D6",
         secondary: {
           DEFAULT: "#1EC8B3",  // Obzervable teal
           light: "#42E6D1",

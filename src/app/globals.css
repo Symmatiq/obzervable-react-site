@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  --color-primary: 75, 125, 251; /* #4B7DFB */
+  --color-primary-light: 114, 150, 255; /* #7296FF */
+  --color-primary-dark: 51, 88, 214; /* #3358D6 */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +22,27 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
+}
+
+/* Add direct CSS to override Tailwind classes that might be cached */
+.bg-primary {
+  background-color: #5b58fd  !important;
+}
+
+.text-primary {
+  color: #5b58fd !important;
+}
+
+.border-primary {
+  border-color: #5b58fd !important;
+}
+
+.hover\:bg-primary:hover {
+  background-color: #5b58fd !important;
+}
+
+.hover\:text-primary:hover {
+  color: #5b58fd !important;
 }
 
 @layer base {
