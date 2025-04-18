@@ -1,15 +1,15 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Products - Obzervable',
+  title: 'Features - Obzervable',
   description: 'Explore Obzervable\'s enterprise-grade platform for event-driven architectures, data mesh support, and real-time streaming data pipelines.',
 };
 
-export default function ProductsPage() {
+export default function FeaturesPage() {
   return (
     <main className="flex min-h-screen flex-col items-center p-4 md:p-12 lg:p-24">
       <div className="max-w-7xl w-full">
-        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8">Our Products</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8">Our Features</h1>
         
         <p className="text-xl mb-8">
           Obzervable is a web-based platform designed to empower data and app developers to build 
