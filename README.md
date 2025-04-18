@@ -4,7 +4,7 @@ Official website for Obzervable data observability platform built with Next.js, 
 
 ## Overview
 
-This website showcases Obzervable's data observability platform, highlighting key features such as domain-driven design, data mesh support, and event-driven architecture. The site includes multiple pages for products, solutions, pricing, careers, and more.
+This website showcases Obzervable's data observability platform, highlighting key features such as domain-driven design, data mesh support, and event-driven architecture. The site includes multiple pages for features, solutions, pricing, careers, and more.
 
 ## Tech Stack
 
@@ -25,7 +25,7 @@ This website showcases Obzervable's data observability platform, highlighting ke
 ## Pages
 
 - Home
-- Products
+- Features
 - Solutions
 - Integrations
 - Docs
