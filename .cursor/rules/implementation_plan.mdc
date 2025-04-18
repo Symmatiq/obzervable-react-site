@@ -1,3 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 # Implementation Plan for Obzervable Site
 
 This implementation plan outlines the step-by-step process to build the Obzervable website from scratch. The plan is divided into distinct phases to ensure an organized and efficient development process.
