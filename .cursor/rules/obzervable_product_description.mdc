@@ -11,7 +11,7 @@ alwaysApply: false
 
 ### Project Vision
 
-Obzervable is a web-based platform designed to empower data and app developers to build **event-driven, real-time streaming, microservice-based, and data mesh architectures** using Amazon Web Services (AWS). The platform simplifies the creation and management of **real-time data pipelines and streaming architectures**, enabling companies of all sizes to leverage data for applications such as real-time analytics, event-driven microservices, IoT data collection, AI-driven workflows, and more. Obzervable achieves this by combining an intuitive user experience with powerful **AI-assisted tools**, seamless AWS integration, and **rstreams**—an open-source SDK and platform for event streaming (available at [rstreams.org](http://rstreams.org/)). It aims to be the go-to solution for modern, data-driven development.
+Obzervable is a web-based platform designed to empower data and app developers to build **event-driven, real-time streaming, microservice-based, and data mesh architectures** using Amazon Web Services (AWS). The platform simplifies the creation and management of **real-time data pipelines and streaming architectures**, enabling companies of all sizes to leverage data for applications such as real-time analytics, event-driven microservices, IoT data collection, AI-driven workflows, and more. Obzervable achieves this by combining an intuitive user experience with powerful **AI-assisted tools**, seamless AWS integration, and **rstreams**—an open-source SDK and platform for event streaming (available at [rstreams.org](mdc:http:/rstreams.org)). It aims to be the go-to solution for modern, data-driven development.
 
 **Core Value**: Obzervable reduces complexity for developers and accelerates time-to-market for businesses by simplifying the development and management of real-time data pipelines and streaming architectures on AWS.
 
@@ -82,7 +82,7 @@ Obzervable supports a wide range of applications, including:
     - **Version Control**: Supports infrastructure-as-code (IaC) and microservices versioning.
     - **CI/CD**: Integrates with **GitHub Actions** or **AWS CodePipeline** for continuous integration and deployment.
 7. **Real-time Streaming and Data Mesh Support**
-    - **rstreams**: An open-source SDK and platform (see [rstreams.org](http://rstreams.org/)) for event streaming. Obzervable builds on rstreams to manage real-time flows using AWS services like **Amazon Kinesis** and **Amazon Kinesis Data Firehose**.
+    - **rstreams**: An open-source SDK and platform (see [rstreams.org](mdc:http:/rstreams.org)) for event streaming. Obzervable builds on rstreams to manage real-time flows using AWS services like **Amazon Kinesis** and **Amazon Kinesis Data Firehose**.
     - **Data Mesh Architecture**: Guides developers into a microservice architecture with **domain-driven design**. Each domain owns and publishes its data, simplifying transport and synchronization across domains.
     - **Event Sourcing and CQRS**: Supports **Event Sourcing** (storing state as a sequence of events) and **Command Query Responsibility Segregation (CQRS)** for building scalable microservices.
 8. **Monitoring and Analytics**

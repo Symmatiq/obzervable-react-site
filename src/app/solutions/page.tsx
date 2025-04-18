@@ -165,7 +165,7 @@ export default function SolutionsPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8">Solutions for Modern Data Challenges</h1>
         
         <p className="text-xl mb-12">
-          Obzervable is a web-based platform empowering developers to build event-driven, 
+          Obzervable is a cloud-based platform empowering developers to build event-driven, 
           real-time streaming, microservice-based, and data mesh architectures on AWS. 
           Our solutions adapt to your specific needs while significantly reducing development time and operational complexity.
         </p>

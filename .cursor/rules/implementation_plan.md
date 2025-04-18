@@ -45,7 +45,7 @@ This implementation plan outlines the step-by-step process to build the Obzervab
 2. **Page Scaffolding**
    - Create basic page structures for:
      - Home page (`src/app/(home)/page.tsx`)
-     - Products page (`src/app/products/page.tsx`)
+     - Features page (`src/app/features/page.tsx`)
      - Solutions page (`src/app/solutions/page.tsx`)
      - Integrations page (`src/app/integrations/page.tsx`)
      - Docs page (`src/app/docs/page.tsx`)
@@ -68,7 +68,7 @@ This implementation plan outlines the step-by-step process to build the Obzervab
    - Develop visual elements and animations
 
 2. **Section-Specific Development**
-   - Products page: Showcase key product capabilities
+   - Features page: Showcase key product capabilities
    - Solutions page: Highlight use cases and industry applications
    - Integrations page: List compatible systems and platforms
    - Docs page: Create comprehensive resource hub structure

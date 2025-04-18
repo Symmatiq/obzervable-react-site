@@ -53,7 +53,7 @@ const benefits = [
     ),
   },
   {
-    title: 'In-browser Data Flow Builder',
+    title: 'Cloud-based Data Flow Builder',
     description: 'Visually design and deploy data pipelines with our intuitive drag-and-drop interface.',
     color: 'bg-teal-50',
     iconColor: 'text-secondary',

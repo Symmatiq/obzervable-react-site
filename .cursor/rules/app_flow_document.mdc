@@ -15,11 +15,11 @@ Upon arrival, visitors are greeted by a dynamic landing page showcasing Obzervab
 
 The site employs a navigation structure inspired by platforms like Rudderstack, providing intuitive access to key areas:
 Navigation is persistent across the site, ensuring users can easily move between sections.
-The primary navigation items are: **Products, Solutions, Integrations, Docs, Resources, Pricing**.
+The primary navigation items are: **Features, Solutions, Integrations, Docs, Resources, Pricing**.
 
 ## 3. Core Content Flows
 
-- **From Home to Products/Solutions:** Visitors can navigate from the landing page to dedicated sections elaborating on Obzervable's offerings, potentially linking Products/Solutions to the core concepts (Domain-Driven, Data Mesh, Event-Driven) drawn from `obzervable.com`.
+- **From Home to Features/Solutions:** Visitors can navigate from the landing page to dedicated sections elaborating on Obzervable's offerings, potentially linking Features/Solutions to the core concepts (Domain-Driven, Data Mesh, Event-Driven) drawn from `obzervable.com`.
 - **Exploring Integrations:** The Integrations page lists compatible systems and platforms.
 - **Diving into Documentation:** The Docs Hub acts as a comprehensive resource center, potentially structured like Rudderstack's docs:
     - Getting Started / How it Works
@@ -40,4 +40,4 @@ Standard error handling (e.g., 404 pages) directs users back to the Home page or
 
 ## 6. Conclusion: The Obzervable Journey
 
-The user journey is designed to guide technical audiences from initial awareness (Landing Page) through understanding Obzervable's unique approach (Products, Solutions), technical depth (Docs, Integrations), supporting materials (Resources), and finally towards direct engagement (Pricing page linking to external signup or demo request). The flow mirrors the logical progression of evaluating an enterprise platform, adapting Rudderstack's structural clarity to showcase Obzervable's distinct advantages in data mesh, event-driven architecture, and AI-powered development.
+The user journey is designed to guide technical audiences from initial awareness (Landing Page) through understanding Obzervable's unique approach (Features, Solutions), technical depth (Docs, Integrations), supporting materials (Resources), and finally towards direct engagement (Pricing page linking to external signup or demo request). The flow mirrors the logical progression of evaluating an enterprise platform, adapting Rudderstack's structural clarity to showcase Obzervable's distinct advantages in data mesh, event-driven architecture, and AI-powered development.

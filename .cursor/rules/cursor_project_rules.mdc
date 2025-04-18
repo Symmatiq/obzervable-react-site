@@ -1,6 +1,6 @@
 ---
 description: Apply these rules when making changes to the project
-globs:
+globs: 
 alwaysApply: true
 ---
 
@@ -8,7 +8,7 @@ Update this rule if user requested changes to the project requirement, etc.
 ## Project Overview
 
 *   **Type:** Multi-Page Website
-*   **Description:** A website to showcase the Obzervable platform, highlighting enterprise data strategies, domain-driven design, data mesh architecture, and advanced observability features to attract developers, architects, and CTOs. The site mirrors Rudderstack's intuitive navigation (Products, Solutions, Integrations, Docs, Resources, Pricing) and adapts Obzervable's messaging accordingly.
+*   **Description:** A website to showcase the Obzervable platform, highlighting enterprise data strategies, domain-driven design, data mesh architecture, and advanced observability features to attract developers, architects, and CTOs. The site mirrors Rudderstack's intuitive navigation (Features, Solutions, Integrations, Docs, Resources, Pricing) and adapts Obzervable's messaging accordingly.
 *   **Primary Goal:** Build a multi-page website to showcase the Obzervable platform and attract developers, architects, and CTOs.
 
 ## Project Structure
@@ -26,7 +26,7 @@ Update this rule if user requested changes to the project requirement, etc.
 
 *   **Versioned Structure:**
 
-    *   **app/**: Holds page directories corresponding to major sections like Products, Solutions, Integrations, Docs, Resources, Pricing with appropriate routing.
+    *   **app/**: Holds page directories corresponding to major sections like Features, Solutions, Integrations, Docs, Resources, Pricing with appropriate routing.
     *   Example 1: `app/docs` → Developer documentation hub
     *   Example 2: `app/integrations` → Pages showcasing compatible systems
 
@@ -35,7 +35,7 @@ Update this rule if user requested changes to the project requirement, etc.
 *   **Stack-Versioned Patterns:**
 
     *   **app/(home)/page.tsx**: Next.js 14 root landing page implementation
-    *   **app/products/page.tsx**: Page to showcase product offerings
+    *   **app/features/page.tsx**: Page to showcase Features offerings
     *   **app/solutions/page.tsx**: Page detailing solutions by use case or industry
     *   **app/integrations/page.tsx**: Page listing integrations
     *   **app/docs/page.tsx**: Developer documentation hub page
@@ -61,7 +61,7 @@ Update this rule if user requested changes to the project requirement, etc.
 
 *   **Stack-Aligned Flow:**
 
-    *   The user journey starts at the Home page (`app/(home)/page.tsx`), proceeds to Products (`app/products/page.tsx`), Solutions (`app/solutions/page.tsx`), Docs (`app/docs/page.tsx`), and other informational pages (Integrations, Resources, Pricing), ensuring seamless transitions and clear calls-to-action (e.g., external sign-up links for registration).
+    *   The user journey starts at the Home page (`app/(home)/page.tsx`), proceeds to Features (`app/features/page.tsx`), Solutions (`app/solutions/page.tsx`), Docs (`app/docs/page.tsx`), and other informational pages (Integrations, Resources, Pricing), ensuring seamless transitions and clear calls-to-action (e.g., external sign-up links for registration).
 
 ## Best Practices
 

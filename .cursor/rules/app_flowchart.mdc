@@ -7,7 +7,7 @@ alwaysApply: true
 Update this rule if user requested changes to the project requirement, etc.
 flowchart TD
   A[Landing Page: Obzervable - Real-time Data, Simplified]
-  B[Navigate Menu: Products, Solutions, Integrations, Docs, Resources, Pricing]
+  B[Navigate Menu: Features, Solutions, Integrations, Docs, Resources, Pricing]
   C[Overview & Messaging: Domain-Driven, Data Mesh, Event-Driven Arch.]
   D[DEPRECATED_Features Page: Core Platform Capabilities]
   E[Documentation & Developer Hub]
@@ -33,7 +33,7 @@ flowchart TD
 
   A --> B
 
-  B -- Products --> C
+  B -- Features --> C
   B -- Solutions --> I
   B -- Integrations --> F
   B -- Docs --> E

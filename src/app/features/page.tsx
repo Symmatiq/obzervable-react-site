@@ -12,7 +12,7 @@ export default function FeaturesPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8">Our Features</h1>
         
         <p className="text-xl mb-8">
-          Obzervable is a web-based platform designed to empower data and app developers to build 
+          Obzervable is a cloud-based platform designed to empower data and app developers to build 
           <span className="font-semibold"> event-driven, real-time streaming, microservice-based, and data mesh architectures</span> using 
           Amazon Web Services (AWS).
         </p>
@@ -44,7 +44,7 @@ export default function FeaturesPage() {
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-primary mb-4">Data Flow Builder</h3>
               <p className="text-gray-700 mb-4">
-                Design and deploy complex data flows with our intuitive in-browser Playground.
+                Design and deploy complex data flows with our intuitive cloud-based Playground.
               </p>
               <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">
                 <li>Visual flow visualization</li>

@@ -60,7 +60,7 @@ const docCategories = [
     ]
   },
   {
-    title: 'Data Flow Builder',
+    title: 'Cloud-based Data Flow Builder',
     description: 'Design and implement data flows with our intuitive visual builder.',
     icon: (
       <svg 
