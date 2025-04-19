@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
 
@@ -152,6 +152,7 @@ const recentPosts = [
   }
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function PostCard({ post, featured = false }: { post: any, featured?: boolean }) {
   return (
     <article className={`bg-white rounded-xl overflow-hidden ${featured ? 'shadow-lg' : 'shadow-md'}`}>
@@ -320,10 +321,10 @@ export default function BlogPage() {
             Get started with Obzervable today and see the difference data observability can make for your organization.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button variant="white">
+            <Button variant="primary">
               Request a Demo
             </Button>
-            <Button variant="outline-white">
+            <Button variant="outline">
               View Documentation
             </Button>
           </div>

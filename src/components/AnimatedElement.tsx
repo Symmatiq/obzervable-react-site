@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { motion, Variant } from 'framer-motion';
+import { motion, TargetAndTransition, Variant } from 'framer-motion';
 
 type AnimationType = 'fadeIn' | 'slideUp' | 'slideLeft' | 'slideRight' | 'scale' | 'bounce';
 
@@ -57,8 +57,8 @@ export default function AnimatedElement({
 
   return (
     <motion.div
-      initial={initial}
-      whileInView={animate}
+      initial={initial as TargetAndTransition}
+      whileInView={animate as TargetAndTransition}
       viewport={{ once }}
       transition={{ duration, delay }}
       className={className}

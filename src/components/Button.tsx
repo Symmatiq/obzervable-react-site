@@ -49,6 +49,7 @@ export default function Button({
           className={buttonClasses}
           target="_blank"
           rel="noopener noreferrer"
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           {...props as any}
         >
           {children}
@@ -60,6 +61,7 @@ export default function Button({
       <Link 
         href={href}
         className={buttonClasses}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         {...props as any}
       >
         {children}

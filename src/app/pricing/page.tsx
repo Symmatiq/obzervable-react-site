@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { CheckIcon } from '@heroicons/react/24/solid';
 import Button from '@/components/Button';
 import AnimatedElement from '@/components/AnimatedElement';
@@ -152,7 +152,7 @@ export default function PricingPage() {
         </AnimatedElement>
         <AnimatedElement type="fadeIn" delay={0.2}>
           <p className="mt-6 max-w-2xl mx-auto text-xl text-gray-500">
-            Choose the plan that's right for your business. All plans include a 14-day free trial.
+            Choose the plan that&apos;s right for your business. All plans include a 14-day free trial.
           </p>
         </AnimatedElement>
       </section>

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
+// import Image from 'next/image';
+// import Link from 'next/link';
 import Hero from '@/components/Hero';
 import AnimatedElement from '@/components/AnimatedElement';
 import Button from '@/components/Button';
@@ -127,9 +127,78 @@ export default function Home() {
           }}
           image={
             <div className="relative h-96 w-full">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg shadow-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={0.5} stroke="currentColor" className="w-32 h-32 text-primary/30">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.348 14.651a3.75 3.75 0 0 1 0-5.303m5.304 0a3.75 3.75 0 0 1 0 5.303m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.007H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-lg shadow-lg flex items-center justify-center p-8 overflow-hidden">
+                {/* New SVG for Real-time Data, Simplified */}
+                <svg width="100%" height="100%" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" aria-labelledby="heroSvgTitle heroSvgDesc" role="img">
+                  <title id="heroSvgTitle">Obzervable Platform Concept Diagram</title>
+                  <desc id="heroSvgDesc">Abstract diagram representing real-time data flow through interconnected nodes, symbolizing Obzervable&apos;s simplified approach to data mesh and event-driven architecture.</desc>
+                  <defs>
+                    <linearGradient id="gradBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor: '#e0f2fe', stopOpacity: 0.1}} />
+                      <stop offset="100%" style={{stopColor: '#ccfbf1', stopOpacity: 0.1}} />
+                    </linearGradient>
+                    <linearGradient id="gradNodeCore" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor: '#005f73', stopOpacity: 1}} />
+                      <stop offset="100%" style={{stopColor: '#0a9396', stopOpacity: 1}} />
+                    </linearGradient>
+                     <linearGradient id="gradNodeDomain" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor: '#94d2bd', stopOpacity: 1}} />
+                      <stop offset="100%" style={{stopColor: '#e9d8a6', stopOpacity: 1}} />
+                    </linearGradient>
+                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+                      <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                      </feMerge>
+                    </filter>
+                     {/* Animation for flowing lines */}
+                    <style>
+                      {`.flow-line { stroke-dasharray: 10 5; animation: flow 1.5s linear infinite; }
+                      @keyframes flow {
+                        to { stroke-dashoffset: -15; }
+                      }`}
+                    </style>
+                  </defs>
+
+                  {/* Background shape */}
+                  <rect width="400" height="250" fill="url(#gradBg)" />
+
+                  {/* Central Node (Obzervable Core/Simplified View) */}
+                  <circle cx="200" cy="125" r="40" fill="url(#gradNodeCore)" stroke="#003f5c" strokeWidth="1.5" filter="url(#glow)"/>
+                  {/* Simple Obzervable Eye/Lens Icon */}
+                  <circle cx="200" cy="125" r="15" fill="none" stroke="#ade8f4" strokeWidth="2"/>
+                  <circle cx="200" cy="125" r="5" fill="#ffffff"/>
+
+                  {/* Surrounding Domain Nodes */}
+                  <g>
+                    <circle cx="80" cy="70" r="25" fill="url(#gradNodeDomain)" stroke="#005f73" strokeWidth="1" opacity="0.9"/>
+                    <text x="80" y="70" textAnchor="middle" dy=".3em" fontSize="8" fill="#001219" fontWeight="medium">Domain A</text>
+                  </g>
+                  <g>
+                    <circle cx="320" cy="70" r="25" fill="url(#gradNodeDomain)" stroke="#005f73" strokeWidth="1" opacity="0.9"/>
+                    <text x="320" y="70" textAnchor="middle" dy=".3em" fontSize="8" fill="#001219" fontWeight="medium">Domain B</text>
+                  </g>
+                  <g>
+                    <circle cx="80" cy="180" r="25" fill="url(#gradNodeDomain)" stroke="#005f73" strokeWidth="1" opacity="0.9"/>
+                    <text x="80" y="180" textAnchor="middle" dy=".3em" fontSize="8" fill="#001219" fontWeight="medium">Domain C</text>
+                  </g>
+                  <g>
+                    <circle cx="320" cy="180" r="25" fill="url(#gradNodeDomain)" stroke="#005f73" strokeWidth="1" opacity="0.9"/>
+                    <text x="320" y="180" textAnchor="middle" dy=".3em" fontSize="8" fill="#001219" fontWeight="medium">Domain D</text>
+                  </g>
+
+                  {/* Connecting Flow Lines (Animated) */}
+                  <path d="M 105 78 C 140 90, 160 100, 175 110" stroke="#0a9396" strokeWidth="1.5" fill="none" className="flow-line" style={{animationDelay: '0s'}}/>
+                  <path d="M 295 78 C 260 90, 240 100, 225 110" stroke="#94d2bd" strokeWidth="1.5" fill="none" className="flow-line" style={{animationDelay: '0.3s'}}/>
+                  <path d="M 105 172 C 140 160, 160 150, 175 140" stroke="#e9d8a6" strokeWidth="1.5" fill="none" className="flow-line" style={{animationDelay: '0.6s'}}/>
+                  <path d="M 295 172 C 260 160, 240 150, 225 140" stroke="#ee9b00" strokeWidth="1.5" fill="none" className="flow-line" style={{animationDelay: '0.9s'}}/>
+
+                  {/* Inter-domain lines (static, subtle) */}
+                  <path d="M 100 80 Q 150 30, 300 80" stroke="#cae9ff" strokeWidth="1" fill="none" strokeDasharray="3 3" opacity="0.5"/>
+                   <path d="M 90 170 Q 40 125, 90 80" stroke="#cae9ff" strokeWidth="1" fill="none" strokeDasharray="3 3" opacity="0.5"/>
+                   <path d="M 310 170 Q 360 125, 310 80" stroke="#cae9ff" strokeWidth="1" fill="none" strokeDasharray="3 3" opacity="0.5"/>
+                   <path d="M 100 170 Q 200 220, 300 170" stroke="#cae9ff" strokeWidth="1" fill="none" strokeDasharray="3 3" opacity="0.5"/>
                 </svg>
               </div>
             </div>
@@ -290,7 +359,7 @@ export default function Home() {
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <blockquote className="text-gray-700 italic">"{testimonial.quote}"</blockquote>
+                <blockquote className="text-gray-700 italic">&quot;{testimonial.quote}&quot;</blockquote>
               </AnimatedElement>
             ))}
           </div>

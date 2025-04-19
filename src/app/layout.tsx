@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://obzervable.com'),
   title: {
     template: '%s | Obzervable',
     default: 'Obzervable - Data Observability Platform',

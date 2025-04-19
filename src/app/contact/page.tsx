@@ -73,7 +73,7 @@ export default function ContactPage() {
           </AnimatedElement>
           <AnimatedElement type="fadeIn" delay={0.2}>
             <p className="text-xl max-w-3xl mx-auto text-gray-600">
-              Have questions or ready to get started? We're here to help you achieve data quality and reliability at scale.
+              Have questions or ready to get started? We&apos;re here to help you achieve data quality and reliability at scale.
             </p>
           </AnimatedElement>
         </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 <h2 className="text-3xl font-bold mb-6">Send us a message</h2>
                 <p className="text-gray-600 mb-8">
                   Fill out the form and our team will get back to you within 24 hours. 
-                  We're excited to learn more about your data observability needs.
+                  We&apos;re excited to learn more about your data observability needs.
                 </p>
                 
                 <div className="mt-12">
@@ -219,7 +219,7 @@ export default function ContactPage() {
                       className="h-4 w-4 text-primary border-gray-300 rounded mt-1"
                     />
                     <label htmlFor="privacy" className="ml-2 block text-sm text-gray-600">
-                      By submitting this form, I agree to Obzervable's <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.
+                      By submitting this form, I agree to Obzervable&apos;s <Link href="/privacy" className="text-primary hover:underline">Privacy Policy</Link>.
                     </label>
                   </div>
                   
@@ -257,7 +257,7 @@ export default function ContactPage() {
                     <>
                       <h3 className="text-xl font-bold mb-4">Do you offer custom implementation services?</h3>
                       <p className="text-gray-600">
-                        Yes, our professional services team can provide custom implementation, configuration, and training services tailored to your organization's specific needs. Contact us for more information about our professional services offerings.
+                        Yes, our professional services team can provide custom implementation, configuration, and training services tailored to your organization&apos;s specific needs. Contact us for more information about our professional services offerings.
                       </p>
                     </>
                   )}
@@ -293,10 +293,10 @@ export default function ContactPage() {
               Join the hundreds of organizations using Obzervable to monitor, troubleshoot, and improve their data quality.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="/demo" variant="white">
+              <Button href="/demo" variant="primary">
                 Request a Demo
               </Button>
-              <Button href="/pricing" variant="outlineWhite">
+              <Button href="/pricing" variant="outline">
                 View Pricing
               </Button>
             </div>

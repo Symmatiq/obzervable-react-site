@@ -1,14 +1,10 @@
-import { Metadata } from 'next';
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
 import AnimatedElement from '@/components/AnimatedElement';
-import Button from '@/components/Button';
-
-export const metadata: Metadata = {
-  title: 'Obzervable - Real-time Data, Simplified',
-  description: 'Obzervable delivers real-time data streaming with domain-driven design, data mesh architecture, and event-driven principles for modern enterprises.',
-};
+// import { CodeBlock } from '@/components/CodeBlock';
 
 const features = [
   {
@@ -17,6 +13,15 @@ const features = [
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Self-Serve Data Consumption',
+    description: 'Empower teams to consume data for their specific needs without concerning themselves with the technical complexity of the data origin.',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
       </svg>
     ),
   },
@@ -49,6 +54,17 @@ const benefits = [
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Self-Serve Data Infrastructure',
+    description: 'Enable teams to access, discover, and utilize data autonomously without depending on centralized data teams or specialized knowledge.',
+    color: 'bg-indigo-50',
+    iconColor: 'text-indigo-600',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
       </svg>
     ),
   },
@@ -141,16 +157,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white">
         <Hero
-          title="Real-time Data, Simplified"
-          subtitle="Build scalable, event-driven systems with domain-driven design and data mesh architecture for modern enterprises."
+          title="Build. Stream. <span class='text-primary'>Observe.</span>"
+          subtitle="The most powerful platform for building, monitoring, and scaling event-driven and real-time streaming data infrastructures."
           primaryCTA={{
-            text: "Schedule a Demo",
+            text: "Get Started Free",
             href: "http://app.obzervable.com/signup",
             external: true
           }}
           secondaryCTA={{
             text: "Explore Features",
-            href: "/products"
+            href: "/features"
           }}
           image={
             <div className="relative h-96 w-full">
@@ -281,24 +297,24 @@ export default function HomePage() {
           </AnimatedElement>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedElement type="slideUp" delay={0.1} className="bg-white rounded-xl shadow-md p-8">
+            <AnimatedElement type="fadeIn" delay={0.1} className="bg-white rounded-xl shadow-md p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Fully Managed Infrastructure</h3>
               <p className="text-gray-600">
                 Eliminate server management with AWS-backed, serverless operations for zero-maintenance deployment.
               </p>
             </AnimatedElement>
 
-            <AnimatedElement type="slideUp" delay={0.2} className="bg-white rounded-xl shadow-md p-8">
+            <AnimatedElement type="fadeIn" delay={0.2} className="bg-white rounded-xl shadow-md p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">Seamless Scaling</h3>
               <p className="text-gray-600">
                 Scale up/out automatically with serverless compute, handling traffic spikes without manual intervention.
               </p>
             </AnimatedElement>
 
-            <AnimatedElement type="slideUp" delay={0.3} className="bg-white rounded-xl shadow-md p-8">
+            <AnimatedElement type="fadeIn" delay={0.3} className="bg-white rounded-xl shadow-md p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-3">AWS-Integrated Security</h3>
               <p className="text-gray-600">
-                Leverage AWS's encryption and IAM for enterprise-grade security with simpler setup and management.
+                Leverage AWS&apos;s encryption and IAM for enterprise-grade security with simpler setup and management.
               </p>
             </AnimatedElement>
           </div>
@@ -325,7 +341,7 @@ export default function HomePage() {
                 delay={index * 0.1}
                 className="bg-white rounded-xl shadow-md p-8"
               >
-                <p className="text-gray-700 mb-6 italic">"{testimonial.quote}"</p>
+                <p className="text-gray-700 mb-6 italic">&quot;{testimonial.quote}&quot;</p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4">
                     {testimonial.avatar && (
@@ -366,13 +382,13 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                Schedule a Demo
+                Get Started Free
               </a>
               <Link
-                href="/products"
+                href="/features"
                 className="bg-primary-light text-white font-semibold px-8 py-3 rounded-lg border border-white/30 hover:bg-primary-dark transition-colors"
               >
-                Explore Products
+                Explore Features
               </Link>
             </div>
           </AnimatedElement>

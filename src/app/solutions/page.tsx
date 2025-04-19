@@ -262,7 +262,7 @@ export default function SolutionsPage() {
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-2xl font-semibold text-primary mb-4">Hosted Multitenant</h3>
               <p className="text-gray-700 mb-4">
-                A fully managed SaaS offering hosted on Obzervable's AWS infrastructure with high availability and enterprise-grade security.
+                A fully managed SaaS offering hosted on Obzervable&apos;s AWS infrastructure with high availability and enterprise-grade security.
               </p>
               
               <ul className="list-disc list-inside text-gray-600 mb-6 space-y-2">

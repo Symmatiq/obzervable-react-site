@@ -171,7 +171,7 @@ export default function CareersPage() {
               <h2 className="text-3xl font-bold mb-6">Our Culture</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  At Obzervable, we're building a team of exceptional individuals who are passionate about solving complex data challenges and helping organizations build trust in their data.
+                  At Obzervable, we&apos;re building a team of exceptional individuals who are passionate about solving complex data challenges and helping organizations build trust in their data.
                 </p>
                 <p>
                   We believe the best products are built by diverse teams that bring different perspectives and experiences to the table. We strive to create an inclusive environment where everyone feels valued and empowered to do their best work.
@@ -264,7 +264,7 @@ export default function CareersPage() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Don't see a position that matches your skills?</p>
+            <p className="text-gray-600 mb-6">Don&apos;t see a position that matches your skills?</p>
             <Button href="/contact" variant="primary">
               Contact Us
             </Button>
@@ -294,7 +294,7 @@ export default function CareersPage() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "I've worked at several tech companies, but Obzervable stands out for truly embodying its values. The team is collaborative, the problems are challenging, and I'm constantly learning from brilliant colleagues while having the flexibility to work on my own terms."
+                &quot;I&apos;ve worked at several tech companies, but Obzervable stands out for truly embodying its values. The team is collaborative, the problems are challenging, and I&apos;m constantly learning from brilliant colleagues while having the flexibility to work on my own terms.&quot;
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-md">
@@ -314,7 +314,7 @@ export default function CareersPage() {
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Joining Obzervable was the best career decision I've made. The problems we're tackling are at the cutting edge of data science, and I get to work directly with customers to understand their needs. The remote-first culture gives me the flexibility I need while still feeling connected to an amazing team."
+                &quot;Joining Obzervable was the best career decision I&apos;ve made. The problems we&apos;re tackling are at the cutting edge of data science, and I get to work directly with customers to understand their needs. The remote-first culture gives me the flexibility I need while still feeling connected to an amazing team.&quot;
               </p>
             </div>
           </div>
@@ -329,10 +329,10 @@ export default function CareersPage() {
             Explore our open positions and help us build the future of data observability.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="#openings" variant="white">
+            <Button href="#openings" variant="primary">
               View Open Positions
             </Button>
-            <Button href="/about" variant="outlineWhite">
+            <Button href="/about" variant="outline">
               Learn About Us
             </Button>
           </div>

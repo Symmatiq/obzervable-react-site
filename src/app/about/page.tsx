@@ -124,7 +124,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Obzervable was founded in 2020 by Sarah Johnson and Michael Chen, who experienced firsthand the challenges of maintaining data quality and reliability at scale while working at some of the world's leading data companies.
+                  Obzervable was founded in 2020 by Sarah Johnson and Michael Chen, who experienced firsthand the challenges of maintaining data quality and reliability at scale while working at some of the world&apos;s leading data companies.
                 </p>
                 <p>
                   As organizations increasingly rely on data to drive critical business decisions, the cost of unreliable data has skyrocketed. Yet, the tools to effectively monitor and maintain data quality have lagged behind.
@@ -178,7 +178,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">Our Leadership Team</h2>
           <p className="text-xl text-center text-gray-600 max-w-3xl mx-auto mb-12">
-            Meet the experienced team driving Obzervable's mission to transform how organizations understand and trust their data.
+            Meet the experienced team driving Obzervable&apos;s mission to transform how organizations understand and trust their data.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
@@ -261,10 +261,10 @@ export default function AboutPage() {
             Join the hundreds of organizations using Obzervable to monitor, troubleshoot, and improve their data quality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/demo" variant="white">
+            <Button href="/demo" variant="primary">
               Request a Demo
             </Button>
-            <Button href="/pricing" variant="outlineWhite">
+            <Button href="/pricing" variant="outline">
               View Pricing
             </Button>
           </div>

@@ -175,7 +175,7 @@ export default function IntegrationsPage() {
             <div className="md:w-2/3 mb-6 md:mb-0">
               <h2 className="text-2xl font-bold mb-2">Need a Custom Integration?</h2>
               <p className="text-gray-700">
-                Don't see the integration you need? Our team can develop custom connectors 
+                Don&apos;t see the integration you need? Our team can develop custom connectors 
                 for any data source or destination. Contact us to discuss your specific requirements.
               </p>
             </div>

@@ -21,7 +21,8 @@ Obzervable is a streaming event-based data platform that aligns with the data me
 - **Multi-Language Support**: Write code in Python or Node.js, with plans to expand (e.g., Java, Go). While narrower than Spark, Obzervable’s focus ensures simplicity (Data mesh: Architecture, data platform, data products | Definition). *Knowledge Base*: "Getting Started with Python and Node.js in Obzervable."
 - **Zero-to-Scale Simplicity**: Launch scalable pipelines without writing infrastructure code, unlike Kafka’s manual scaling. Obzervable’s AI-driven setup accelerates deployment (What Is Data Mesh? | Informatica). *Use Case*: Startup scaling from prototype to enterprise-grade backend.
 - **High Scalability**: Handle massive data volumes with “Unlimited Listeners,” supporting growing workloads. Obzervable’s scalability matches Kinesis, with less complexity (Data Mesh Architecture and its Benefits | Ultimate Guide). *Blog Idea*: "How Obzervable Scales Your Data Without Breaking the Bank."
-- **Data Validation and Quality from the source** - validate data in stream
+- **Data Validation and Quality from the source** - validate data in stream and enforce compliance with data standards at the data source
+- **Self-serve data consumption** - users can consume data for their own needs and not concern themselves with the technical complexity of the data origin
 
 ## Development Advantages
 
