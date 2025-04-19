@@ -123,7 +123,7 @@ export default function Home() {
           }}
           secondaryCTA={{
             text: "Explore Features",
-            href: "/products"
+            href: "/features"
           }}
           image={
             <div className="relative h-96 w-full">
